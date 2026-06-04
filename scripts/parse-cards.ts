@@ -43,7 +43,7 @@ function parseColor(importance: number): 'red' | 'blue' | 'green' | 'yellow' {
 function extractFrameworkTree(lines: string[]): string {
   let tree = '', inBlock = false, fenceSeen = false;
   for (const l of lines) {
-    if (l.includes('框架') || l.includes('结构')) { inBlock = true; fenceSeen = false; continue; }
+    if (l.startsWith('##') && (l.includes('框架') || l.includes('结构'))) { inBlock = true; fenceSeen = false; continue; }
     if (inBlock && l.trim().startsWith('```')) {
       if (!fenceSeen) { fenceSeen = true; continue; } // opening ``` → skip
       break; // closing ``` → stop
@@ -126,8 +126,10 @@ function parseMarkdown(filePath: string) {
   if (!m) { console.warn(`Skip: ${path.basename(filePath)}`); return null; }
 
   const rawName = m[1].trim();
-  const order = parseInt(m[2].split('-')[0]);
-  const chTitle = stripMd(m[3].trim());
+  const chRange = m[2].trim(); // e.g. "3-4" or "6-10" or "1"
+  const order = parseInt(chRange.split('-')[0]);
+  const chNumber = chRange.includes('-') ? `第${chRange}章 ` : '';
+  const chTitle = chNumber + stripMd(m[3].trim());
 
   let subKey: string | undefined;
   if (rawName.includes('研究方法')) subKey = '研究方法';
