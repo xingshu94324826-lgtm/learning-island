@@ -43,7 +43,7 @@ function parseColor(importance: number): 'red' | 'blue' | 'green' | 'yellow' {
 function extractFrameworkTree(lines: string[]): string {
   let tree = '', inBlock = false, fenceSeen = false;
   for (const l of lines) {
-    if (l.startsWith('##') && (l.includes('框架') || l.includes('结构'))) { inBlock = true; fenceSeen = false; continue; }
+    if (l.startsWith('##') && l.includes('框架')) { inBlock = true; fenceSeen = false; continue; }
     if (inBlock && l.trim().startsWith('```')) {
       if (!fenceSeen) { fenceSeen = true; continue; } // opening ``` → skip
       break; // closing ``` → stop
@@ -57,12 +57,30 @@ function extractKnowledgePoints(chapterId: string, lines: string[]) {
   const kps: { id: string; title: string; content: string[]; importance: number; category: string; color: string; tags: string[] }[] = [];
   let cur: { title: string; content: string[]; importance: number } | null = null;
 
+  let stopKP = false; // guard: once we hit 易错点/薄弱点 section, stop collecting KP content
   for (const line of lines) {
     const h2 = line.match(/^##\s+(.+)/);
     const h3 = line.match(/^###\s+(.+)/);
-    const isSpecial = line.includes('本章框架') || line.includes('常见易错点') || line.includes('我的薄弱点');
 
-    if ((h2 || h3) && !isSpecial) {
+    // Stop collecting KP content when entering 易错点 or 薄弱点 sections
+    if ((h2 || h3) && (line.includes('常见易错点') || line.includes('我的薄弱点'))) {
+      if (cur) {
+        kps.push({
+          id: `${chapterId}-kp${kps.length + 1}`,
+          title: stripMd(cur.title),
+          content: cur.content.join('\n').trim(),
+          importance: cur.importance,
+          category: parseCategory(cur.title),
+          color: parseColor(cur.importance),
+          tags: [],
+        });
+        cur = null;
+      }
+      stopKP = true;
+      continue;
+    }
+
+    if ((h2 || h3) && !line.includes('框架')) {
       if (cur) {
         kps.push({
           id: `${chapterId}-kp${kps.length + 1}`,
@@ -76,7 +94,8 @@ function extractKnowledgePoints(chapterId: string, lines: string[]) {
       }
       const rawTitle = (h2 || h3)![1];
       cur = { title: rawTitle, content: [], importance: parseImportance(rawTitle) };
-    } else if (cur && line.trim() && !line.startsWith('##')) {
+      stopKP = false;
+    } else if (cur && !stopKP && line.trim() && !line.startsWith('##')) {
       cur.content.push(line);
     }
   }
@@ -155,7 +174,7 @@ function listItems(c: string) { return c.split('\n').filter(l => /^[①②③④
 function genQ(kp: any): string {
   // Strip leading numbers, ★, and whitespace from title
   const t = kp.title
-    .replace(/^[一二三四五六七八九十\d]+[.、]\s*/, '')
+    .replace(/^[\d一二三四五六七八九十.、\s]+/, '')
     .replace(/★/g, '')
     .trim();
   switch (kp.category) {
