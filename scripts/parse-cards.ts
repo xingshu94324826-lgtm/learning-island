@@ -41,11 +41,13 @@ function parseColor(importance: number): 'red' | 'blue' | 'green' | 'yellow' {
 // ── Extractors ──
 
 function extractFrameworkTree(lines: string[]): string {
-  let tree = '', inBlock = false;
+  let tree = '', inBlock = false, fenceSeen = false;
   for (const l of lines) {
-    if (l.includes('本章框架') || l.includes('本章结构')) { inBlock = true; continue; }
-    if (inBlock && l.trim().startsWith('```')) break;
-    if (inBlock && l.trim().startsWith('```')) { inBlock = false; continue; }
+    if (l.includes('框架') || l.includes('结构')) { inBlock = true; fenceSeen = false; continue; }
+    if (inBlock && l.trim().startsWith('```')) {
+      if (!fenceSeen) { fenceSeen = true; continue; } // opening ``` → skip
+      break; // closing ``` → stop
+    }
     if (inBlock) tree += l + '\n';
   }
   return tree.trim();
