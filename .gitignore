@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.vercel/
+*.tmp
+src-backup-*/
+.DS_Store
