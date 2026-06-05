@@ -211,7 +211,7 @@ export default function HomePage() {
             🎯 最弱章节
           </Button>
         )}
-        <Button type="dashed" size="large" onClick={() => {
+        <Button type="primary" size="large" onClick={() => {
           const lines: string[] = [];
           lines.push('# 729 教育技术学 · 个人知识档案\n');
           lines.push(`> 导出时间：${new Date().toLocaleString()}\n`);
@@ -274,7 +274,7 @@ export default function HomePage() {
         }}>
           📥 导出档案
         </Button>
-        <Button type="text" size="small" onClick={() => navigate('/changelog')}>
+        <Button type="primary" size="large" onClick={() => navigate('/changelog')}>
           📋 更新日志
         </Button>
       </div>
