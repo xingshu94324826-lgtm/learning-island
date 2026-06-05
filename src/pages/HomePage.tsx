@@ -1,5 +1,5 @@
 // src/pages/HomePage.tsx
-import React from 'react';
+import React, { useMemo } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Card, Button } from 'animal-island-ui';
 import AppShell from '../components/AppShell';
@@ -11,18 +11,30 @@ import type { KnowledgeBase } from '../types';
 
 const data = knowledgeData as KnowledgeBase;
 
+// 729 考研：2026年12月19-20日（统考通常是12月倒数第二个周末）
+const EXAM_DATE = new Date('2026-12-19');
+
 export default function HomePage() {
   const navigate = useNavigate();
   const location = useLocation();
   const mastery = useMastery();
-  const { getOverallProgress, getWeakPoints, progress } = useProgress();
+  const { getOverallProgress, getAverageMastery, getCoverage, getDueReviews, progress } = useProgress();
 
   const progressScore = getOverallProgress();
-  const weakPoints = getWeakPoints(5);
+  const avgMastery = getAverageMastery();
+  const totalKPs = useMemo(() =>
+    data.subjects.reduce((s, sub) =>
+      s + sub.chapters.reduce((cs, ch) => cs + ch.knowledgePoints.length, 0), 0),
+  []);
+  const coverage = getCoverage(totalKPs);
+  const dueReviews = getDueReviews();
+  const daysLeft = useMemo(() => {
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    return Math.max(0, Math.ceil((EXAM_DATE.getTime() - today.getTime()) / 86400000));
+  }, []);
 
   const totalChapters = data.subjects.reduce((s, sub) => s + sub.chapters.length, 0);
-  const totalKPs = data.subjects.reduce((s, sub) =>
-    s + sub.chapters.reduce((cs, ch) => cs + ch.knowledgePoints.length, 0), 0);
 
   const gradeLabel = progressScore >= 80 ? '优秀' :
     progressScore >= 60 ? '良好' : progressScore >= 40 ? '一般' : '待加强';
@@ -33,9 +45,23 @@ export default function HomePage() {
 
   return (
     <AppShell>
+      {/* ── 考研倒计时 ── */}
+      <div style={{
+        display: 'flex', justifyContent: 'center', marginBottom: 8,
+      }}>
+        <div style={{
+          fontSize: 12, fontWeight: 600, padding: '4px 16px', borderRadius: 12,
+          background: daysLeft <= 30 ? '#fff0f0' : 'var(--animal-primary-color-bg, #e6f9f6)',
+          color: daysLeft <= 30 ? '#fc736d' : 'var(--animal-text-color-secondary, #9f927d)',
+          display: 'flex', alignItems: 'center', gap: 6,
+        }}>
+          📅 距离 729 考研还有 <strong style={{ fontSize: 14 }}>{daysLeft}</strong> 天
+        </div>
+      </div>
+
       {/* 三轮学习切换 */}
       {isHomePage && (
-        <div style={{ display: 'flex', gap: 6, justifyContent: 'center', marginBottom: 16, flexWrap: 'wrap' }}>
+        <div style={{ display: 'flex', gap: 6, justifyContent: 'center', marginBottom: 12, flexWrap: 'wrap' }}>
           <div style={{ display: 'flex', background: 'var(--animal-border-color-light, #e8e2d6)', borderRadius: 14, padding: 3, gap: 2 }}>
             <button onClick={() => navigate('/')} style={{ padding: '8px 16px', borderRadius: 12, border: 'none', fontSize: 13, fontWeight: 700, background: '#fff', boxShadow: '0 1px 4px rgba(0,0,0,.08)' }}>
               🏗️ 第一轮 · 建骨架
@@ -50,11 +76,28 @@ export default function HomePage() {
         </div>
       )}
 
-      {/* 新版掌握度仪表盘 */}
+      {/* ── 今日待复习 ── */}
+      {dueReviews > 0 && (
+        <div style={{
+          background: 'linear-gradient(135deg, #fff7ed 0%, #fff 100%)',
+          border: '2px solid #f5c31c', borderRadius: 16, padding: '14px 20px', marginBottom: 12,
+          display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 12, flexWrap: 'wrap',
+        }}>
+          <span style={{ fontSize: 14, fontWeight: 700, color: '#b45309' }}>
+            🔥 今日待复习 {dueReviews} 个考点
+          </span>
+          <span style={{ fontSize: 12, color: 'var(--animal-text-color-secondary, #9f927d)' }}>
+            预计耗时 {Math.round(dueReviews * 1.5)} 分钟
+          </span>
+        </div>
+      )}
+
+      {/* ── Dashboard ── */}
       <div style={{
         background: '#fff', borderRadius: 24, padding: '24px', border: '2px solid var(--animal-border-color-light, #e8e2d6)', marginBottom: 20
       }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 20, flexWrap: 'wrap', justifyContent: 'center' }}>
+          {/* Mastery ring */}
           <div style={{
             width: 88, height: 88, borderRadius: '50%',
             background: `conic-gradient(${gradeColor} ${progressScore}%, #e8e2d6 ${progressScore}%)`,
@@ -65,18 +108,16 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div>
+          <div style={{ minWidth: 0 }}>
             <div style={{ fontSize: 16, fontWeight: 700 }}>总掌握度 · {gradeLabel}</div>
-            <div style={{ fontSize: 13, color: 'var(--animal-text-color-secondary)' }}>
-              已标记 {Object.keys(progress).length} / {totalKPs} 个考点
+            <div style={{ fontSize: 13, color: 'var(--animal-text-color-secondary)', marginTop: 2 }}>
+              覆盖率 {coverage}%（{Object.values(progress).filter(p => p.mastery > 0).length}/{totalKPs}）
+              <span style={{ marginLeft: 8 }}>|</span>
+              <span style={{ marginLeft: 8 }}>平均 {avgMastery}
+                <span style={{ fontSize: 10 }}>/5 星</span>
+              </span>
             </div>
           </div>
-
-          {weakPoints.length > 0 && (
-            <Button type="primary" onClick={() => navigate('/subject/edutech')}>
-              🎯 重点复习弱点 ({weakPoints.length})
-            </Button>
-          )}
         </div>
 
         {/* 三轮学习进度条 */}
@@ -141,7 +182,6 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
-            {/* Chapter mini-bars */}
             <div style={{ display: 'flex', gap: 3, marginTop: 10 }}>
               {sub.chapters.map(ch => (
                 <div key={ch.chapterId} style={{
@@ -175,20 +215,23 @@ export default function HomePage() {
           </Button>
         )}
         <Button type="dashed" size="large" onClick={() => {
-          // Generate Markdown export
           const lines: string[] = [];
           lines.push('# 729 教育技术学 · 个人知识档案\n');
           lines.push(`> 导出时间：${new Date().toLocaleString()}\n`);
-          lines.push(`> 总掌握度：${progressScore}%\n`);
-          lines.push(`> 已标记：${Object.keys(progress).length}/${totalKPs} 个考点\n`);
+          lines.push(`> 总掌握度：${progressScore}% | 覆盖率：${coverage}% | 平均：${avgMastery}/5\n`);
+          lines.push(`> 已标记：${Object.values(progress).filter(p => p.mastery > 0).length}/${totalKPs} 个考点\n`);
+          lines.push(`> 距离考试：${daysLeft} 天\n`);
           lines.push('---\n');
           lines.push('## 掌握度统计\n');
-          lines.push(`| 等级 | 考点数 |`);
-          lines.push(`|------|--------|`);
+          lines.push('| 等级 | 考点数 |');
+          lines.push('|------|--------|');
           for (let lv = 1; lv <= 5; lv++) {
             const count = Object.values(progress).filter(p => p.mastery === lv).length;
             lines.push(`| ${'⭐'.repeat(lv)} | ${count} |`);
           }
+          const today = new Date().toISOString().slice(0, 10);
+          const dueCount = Object.values(progress).filter(p => p.mastery >= 1 && p.nextReview && p.nextReview <= today).length;
+          if (dueCount > 0) lines.push(`\n🔥 今日待复习：${dueCount} 个考点\n`);
           lines.push('\n---\n');
           for (const sub of data.subjects) {
             lines.push(`## ${sub.icon} ${sub.name}\n`);
