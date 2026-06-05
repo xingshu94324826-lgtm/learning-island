@@ -117,12 +117,12 @@
           "order": 2,
           "title": "教育技术的发展历史",
           "importance": 0,
-          "frameworkTree": "教育技术的发展历史\n├── 教育技术发展鸟瞰\n│   ├── 两个方向：物化形态 + 智能形态（媒体论←→过程论）\n│   ├── 三个阶段：传统(手工) → 视听媒体(机电) → 信息化(信息技术)\n│   └── \"2×3\"模型 ★\n│\n├── 国外教育技术的发展演变（美国为典型）\n│   ├── 媒体教学技术：直观教学→视觉教学→视听教学→视听传播\n│   ├── 个别化教学技术：早期→程序教学→CAI（6种模式）\n│   └── 教学系统方法的形成（加涅/格拉泽/布里格斯）\n│\n├── 我国教育技术的发展历程\n│   ├── 电化教育起步（1919幻灯教学）\n│   ├── 南国农\"七论\"\n│   └── 四大误区：重电轻教/重硬轻软/重教轻学/偏科技轻人文\n│\n└── 教育技术理论的新进展\n    ├── 建构主义反思（Blending Learning + 主客观结合）\n    └── 信息技术与课程整合（主导-主体教学结构）★",
+          "frameworkTree": "教育技术的发展历史\n├── 教育技术发展鸟瞰\n│   ├── 两个方向：物化形态 + 观念形态（=智能形态，硬件←→软件/理论）\n│   ├── 核心概念：媒体论（↔物化形态↔视听媒体） + 过程论（↔观念形态↔系统方法）\n│   ├── 三个阶段：传统(手工) → 视听媒体(机电) → 信息化(信息技术)\n│   └── \"2×3\"模型 ★ + 信息化三大特征\n│\n├── 国外教育技术的发展演变（美国为典型）\n│   ├── 媒体教学技术：直观教学→视觉教学→视听教学→视听传播\n│   ├── 个别化教学技术：早期→程序教学→CAI（6种模式）\n│   └── 教学系统方法的形成（加涅/格拉泽/布里格斯）\n│\n├── 我国教育技术的发展历程\n│   ├── 电化教育起步（1919幻灯教学）\n│   ├── 南国农\"七论\"\n│   ├── AECT'94在中国的三点扩展\n│   └── 四大误区：重电轻教/重硬轻软/重教轻学/偏科技轻人文\n│\n└── 教育技术理论的新进展\n    ├── 建构主义反思（Blending Learning + 主客观结合）\n    └── 信息技术与课程整合（主导-主体教学结构）★",
           "knowledgePoints": [
             {
               "id": "edutech-ch2-kp1",
               "title": "二、\"2×3\"模型 ★（核心考点）",
-              "content": "```\n两个方向 × 三个阶段 = 六格矩阵\n两个方向：\n  物化形态（硬件/设备：竹简→幻灯→多媒体计算机→VR）\n  观念形态（软件/理论：口耳相传→程序教学→绩效技术→知识管理）\n三个阶段：传统教育技术 → 视听媒体教育技术 → 信息化教育技术\n```\n| | 传统（手工） | 视听媒体（机电） | 信息化（信息技术） |\n|------|-----------|---------------|------------------|\n| **物化形态** | 竹简/粉笔/黑板/模型 | 幻灯/投影/广播/电影/电视/卫星 | 多媒体计算机/AI/校园网/因特网/VR |\n| **观念形态** | 孔子启发式/苏格拉底产婆术/直观教学 | 经验之塔/教育目标分类/程序教学/先行组织者/细化理论/CDT | 网络课程开发/以学为主教学设计/绩效技术/知识管理 |\n> ★ 信息化教育技术 = 硬件 + 软件 + **潜件**（观念/方法/理论体系）\n---",
+              "content": "```\n两个方向 × 三个阶段 = 六格矩阵\n两个方向：\n  物化形态（硬件/设备：竹简→幻灯→多媒体计算机→VR）\n  观念形态（软件/理论：口耳相传→程序教学→绩效技术→知识管理）\n三个阶段：传统教育技术 → 视听媒体教育技术 → 信息化教育技术\n```\n> ★ 核心对应关系：物化形态 ↔ **媒体论** ↔ 视听媒体；观念形态 ↔ **过程论** ↔ 系统方法\n| | 传统（手工） | 视听媒体（机电） | 信息化（信息技术） |\n|------|-----------|---------------|------------------|\n| **物化形态** | 竹简/粉笔/黑板/模型 | 幻灯/投影/广播/电影/电视/卫星 | 多媒体计算机/AI/校园网/因特网/VR |\n| **观念形态** | 孔子启发式/苏格拉底产婆术/直观教学 | 经验之塔/教育目标分类/程序教学/先行组织者/细化理论/CDT | 网络课程开发/以学为主教学设计/绩效技术/知识管理 |\n> ★ 信息化教育技术 = 硬件 + 软件 + **潜件**（观念/方法/理论体系）\n信息化教育技术的三个重要特征：\n① **以计算机为核心**的信息技术在教育中的应用为主要标志\n② 将直接用于**促进学习**，而不仅仅是辅助教学\n③ 教育技术在企业培训方面有愈来愈强烈地应用需求\n---",
               "importance": 1,
               "category": "method",
               "color": "green",
@@ -131,7 +131,7 @@
             {
               "id": "edutech-ch2-kp3",
               "title": "3.1 媒体教学技术：直观→视觉→视听→传播",
-              "content": "```\n直观教学（先声） → 视觉教学（发端） → 视听教学（主体） → 视听传播（过渡到过程论/系统论）\n关键节点：\n  1900s 直观教学（实物/标本/模型）\n  1920s 视觉教学（幻灯/照片/图表）\n  1937 霍本《课程的视觉化》：视觉教材分类模式和选用原则\n  1940s 视听教学（加入广播/录音/有声电影）\n  1946 戴尔\"经验之塔\"★：\n       底层最具体，越往上越抽象\n       教学应从具体经验入手→逐步抽象\n       学校媒体可弥补下层直接经验之不足\n  1950s 视听传播（传播理论引入，媒体论→过程论）\n  1961 芬恩\"教学系统——黑箱概念\"（早期系统观）\n```",
+              "content": "```\n直观教学（先声） → 视觉教学（发端） → 视听教学（主体） → 视听传播（过渡到过程论/系统论）\n关键节点：\n  1900s 直观教学（实物/标本/模型）\n  1920s 视觉教学（幻灯/照片/图表）\n  1937 霍本《课程的视觉化》：视觉教材分类模式和选用原则\n  1940s 视听教学（加入广播/录音/有声电影）\n  1946 戴尔\"经验之塔\"★（五个要点）：\n       a. 底层最具体，越往上越抽象，教学活动可按具体-抽象程度排成序列\n       b. 教学应从具体经验入手，逐步进入抽象\n       c. 不能只满足具体经验，须向抽象化发展，形成概念\n       d. 学校媒体可使教学活动更具体，也能为抽象概括创造条件\n       e. 塔中间的视听教材和视听经验，比上层符号具体形象，\n          又能突破时空限制，弥补下层直接经验之不足\n  1950s 视听传播（传播理论引入，媒体论→过程论）\n  1961 芬恩\"教学系统——黑箱概念\"（早期系统观）\n```",
               "importance": 0,
               "category": "method",
               "color": "green",
@@ -175,6 +175,15 @@
             },
             {
               "id": "edutech-ch2-kp9",
+              "title": "AECT'94 在中国的三点扩展",
+              "content": "```\n① 强调现代教育理论的指导和**信息技术的支持**\n② 研究对象从\"学习过程与学习资源\"扩展为\"**教与学**的过程和资源\"\n③ 强调教育技术的目的是**优化教与学**\n```",
+              "importance": 0,
+              "category": "method",
+              "color": "green",
+              "tags": []
+            },
+            {
+              "id": "edutech-ch2-kp10",
               "title": "四大误区",
               "content": "```\n① 重\"电\"轻\"教\"    ③ 重\"教\"轻\"学\"\n② 重\"硬\"轻\"软\"    ④ 偏科技轻人文\n```\n---",
               "importance": 0,
@@ -183,7 +192,7 @@
               "tags": []
             },
             {
-              "id": "edutech-ch2-kp11",
+              "id": "edutech-ch2-kp12",
               "title": "5.1 建构主义反思",
               "content": "```\n问题：极端建构主义否定\"讲课/考试\"等基本教学过程，削弱教师作用\n出路：Blending Learning → 主客观相结合认识论\n```",
               "importance": 0,
@@ -192,7 +201,7 @@
               "tags": []
             },
             {
-              "id": "edutech-ch2-kp12",
+              "id": "edutech-ch2-kp13",
               "title": "5.2 信息技术与课程整合 ★",
               "content": "```\n目标：创建\"主导—主体相结合的教学结构\"\n实质：彻底改变教学系统四要素（教师/学生/教学内容/教学媒体）\n      的地位、作用和关系\n核心：改变教师与学生的地位、作用和师生关系\n当前问题：\n  ① 缺乏科学系统的理论\n  ② WebQuest风行→误认为是最佳/主要模式\n```\n---",
               "importance": 1,
@@ -201,7 +210,7 @@
               "tags": []
             },
             {
-              "id": "edutech-ch2-kp13",
+              "id": "edutech-ch2-kp14",
               "title": "六、教育技术发展的四大特点",
               "content": "```\n① 非替代性 —— 表现出累积性（不是新技术取代旧技术）\n② 选择性 —— \"适者生存\"\n③ 对人的作用认识越来越深刻\n④ 需要新观念，通过推进教育整体改革才能快速发展（乔布斯之问）\n```\n---",
               "importance": 0,
@@ -213,18 +222,22 @@
           "errorProne": [
             "\"2×3\"模型：2=物化形态+观念形态，3=传统+视听媒体+信息化",
             "戴尔经验之塔1946年，不是1937（1937是霍本视觉教材）",
-            "信息化教育技术的特征：不只辅助教学，直接用于促进学习",
+            "媒体论↔物化形态↔视听媒体，过程论↔观念形态↔系统方法（别混淆对应关系）",
+            "信息化教育技术的三个特征：计算机为核心 / 促进学习 / 企业培训需求",
             "电化教育起步标志：1919年幻灯教学",
             "主导-主体教学结构：信息技术与课程整合的实质",
             "芬恩\"黑箱概念\"是早期系统观，不是过程模式",
-            "CAI六种模式：练习/指导/对话咨询/游戏/模拟/问题求解"
+            "CAI六种模式：练习/指导/对话咨询/游戏/模拟/问题求解",
+            "AECT'94在中国的三点扩展：信息技术支持 / 教与学 / 优化教与学"
           ],
           "weakPoints": [
-            "\"2×3\"模型完整矩阵默写",
-            "美国教育技术三条主线的完整历程",
+            "\"2×3\"模型完整矩阵默写（含信息化列）",
+            "美国教育技术三条主线的完整历程（直观→视觉→视听→传播 / 个别化 / 系统方法）",
             "戴尔经验之塔五个要点",
             "南国农七论逐一解释",
-            "信息技术与课程整合的实质表述"
+            "媒体论↔过程论的对应关系",
+            "信息化教育技术三大特征",
+            "AECT'94在中国的三点扩展"
           ]
         },
         {
@@ -2511,8 +2524,8 @@
     {
       "id": "edutech-ch2-fc-kp106",
       "chapterId": "edutech-ch2",
-      "question": "\"2×3\"模型 （核心考点）是什么？",
-      "answer": "```\n两个方向 × 三个阶段 = 六格矩阵\n两个方向：\n  物化形态（硬件/设备：竹简→幻灯→多媒体计算机→VR）\n  观念形态（软件/理论：口耳相传→程序教学→绩效技术→知识管理）\n三个阶段：传统教育技术 → 视听媒体教育技术 → 信息化教育技术\n```\n| | 传统（手工） | 视听媒体（机电） | 信息化（信息技术） |\n|------|-----------|---------------|------------------|\n| **物化形态** | 竹简/粉笔/黑板/模型 | 幻灯/投影/广播/电影/电视/卫星 | 多媒体计算机/AI/校园网/因特网/VR |\n| **观念形态** | 孔子启发式/苏格拉底产婆术/直观教学 | 经验之塔/教育目标分类/程序教学/先行组织者/细化理论/CDT | 网络课程开发/以学为主教学设计/绩效技术/知识管理 |\n> ★ 信息化教育技术 = 硬件 + 软件 + **潜件**（观念/方法/理论体系）\n---",
+      "question": "\"2×3\"模型 （核心考点）包括哪些？",
+      "answer": "```\n两个方向 × 三个阶段 = 六格矩阵\n两个方向：\n  物化形态（硬件/设备：竹简→幻灯→多媒体计算机→VR）\n  观念形态（软件/理论：口耳相传→程序教学→绩效技术→知识管理）\n三个阶段：传统教育技术 → 视听媒体教育技术 → 信息化教育技术\n```\n> ★ 核心对应关系：物化形态 ↔ **媒体论** ↔ 视听媒体；观念形态 ↔ **过程论** ↔ 系统方法\n| | 传统（手工） | 视听媒体（机电） | 信息化（信息技术） |\n|------|-----------|---------------|------------------|\n| **物化形态** | 竹简/粉笔/黑板/模型 | 幻灯/投影/广播/电影/电视/卫星 | 多媒体计算机/AI/校园网/因特网/VR |\n| **观念形态** | 孔子启发式/苏格拉底产婆术/直观教学 | 经验之塔/教育目标分类/程序教学/先行组织者/细化理论/CDT | 网络课程开发/以学为主教学设计/绩效技术/知识管理 |\n> ★ 信息化教育技术 = 硬件 + 软件 + **潜件**（观念/方法/理论体系）\n信息化教育技术的三个重要特征：\n① **以计算机为核心**的信息技术在教育中的应用为主要标志\n② 将直接用于**促进学习**，而不仅仅是辅助教学\n③ 教育技术在企业培训方面有愈来愈强烈地应用需求\n---",
       "importance": 1
     },
     {
@@ -2553,719 +2566,733 @@
     {
       "id": "edutech-ch2-fc-kp112",
       "chapterId": "edutech-ch2",
+      "question": "AECT'94 在中国的三点扩展包括哪些？",
+      "answer": "① 强调现代教育理论的指导和信息技术的支持\n② 研究对象从\"学习过程与学习资源\"扩展为\"教与学的过程和资源\"\n③ 强调教育技术的目的是优化教与学",
+      "importance": 0
+    },
+    {
+      "id": "edutech-ch2-fc-kp113",
+      "chapterId": "edutech-ch2",
       "question": "大误区包括哪些？",
       "answer": "① 重\"电\"轻\"教\"    ③ 重\"教\"轻\"学\"\n② 重\"硬\"轻\"软\"    ④ 偏科技轻人文",
       "importance": 0
     },
     {
-      "id": "edutech-ch2-fc-kp113",
+      "id": "edutech-ch2-fc-kp114",
       "chapterId": "edutech-ch2",
       "question": "建构主义反思是什么？",
       "answer": "``\n问题：极端建构主义否定\"讲课/考试\"等基本教学过程，削弱教师作用\n出路：Blending Learning → 主客观相结合认识论\n``",
       "importance": 0
     },
     {
-      "id": "edutech-ch2-fc-kp114",
+      "id": "edutech-ch2-fc-kp115",
       "chapterId": "edutech-ch2",
       "question": "信息技术与课程整合是什么？",
       "answer": "```\n目标：创建\"主导—主体相结合的教学结构\"\n实质：彻底改变教学系统四要素（教师/学生/教学内容/教学媒体）\n      的地位、作用和关系\n核心：改变教师与学生的地位、作用和师生关系",
       "importance": 1
     },
     {
-      "id": "edutech-ch2-fc-kp115",
+      "id": "edutech-ch2-fc-kp116",
       "chapterId": "edutech-ch2",
       "question": "教育技术发展的四大特点包括哪些？",
       "answer": "① 非替代性 —— 表现出累积性（不是新技术取代旧技术）\n② 选择性 —— \"适者生存\"\n③ 对人的作用认识越来越深刻\n④ 需要新观念，通过推进教育整体改革才能快速发展（乔布斯之问）",
       "importance": 0
     },
     {
-      "id": "edutech-ch2-fc-ep116",
+      "id": "edutech-ch2-fc-ep117",
       "chapterId": "edutech-ch2",
       "question": "⚠️ \"2×3\"模型",
       "answer": "2=物化形态+观念形态，3=传统+视听媒体+信息化",
       "importance": 4
     },
     {
-      "id": "edutech-ch2-fc-ep117",
+      "id": "edutech-ch2-fc-ep118",
       "chapterId": "edutech-ch2",
-      "question": "⚠️ 信息化教育技术的特征",
-      "answer": "不只辅助教学，直接用于促进学习",
+      "question": "⚠️ 信息化教育技术的三个特征",
+      "answer": "计算机为核心 / 促进学习 / 企业培训需求",
       "importance": 4
     },
     {
-      "id": "edutech-ch2-fc-ep118",
+      "id": "edutech-ch2-fc-ep119",
       "chapterId": "edutech-ch2",
       "question": "⚠️ 电化教育起步标志",
       "answer": "1919年幻灯教学",
       "importance": 4
     },
     {
-      "id": "edutech-ch2-fc-ep119",
+      "id": "edutech-ch2-fc-ep120",
       "chapterId": "edutech-ch2",
       "question": "⚠️ 主导-主体教学结构",
       "answer": "信息技术与课程整合的实质",
       "importance": 4
     },
     {
-      "id": "edutech-ch2-fc-ep120",
+      "id": "edutech-ch2-fc-ep121",
       "chapterId": "edutech-ch2",
       "question": "⚠️ CAI六种模式",
       "answer": "练习/指导/对话咨询/游戏/模拟/问题求解",
       "importance": 4
     },
     {
-      "id": "edutech-ch3-fc-kp121",
+      "id": "edutech-ch2-fc-ep122",
+      "chapterId": "edutech-ch2",
+      "question": "⚠️ AECT'94在中国的三点扩展",
+      "answer": "信息技术支持 / 教与学 / 优化教与学",
+      "importance": 4
+    },
+    {
+      "id": "edutech-ch3-fc-kp123",
       "chapterId": "edutech-ch3",
       "question": "按表现形态是什么？",
       "answer": "```\n硬件资源 → 机器、设施、场所等物化设备\n软件资源 → 媒体化学习材料 + 工具性软件\n  ├── 内容特定的软件资源\n  ├── 内容相关的软件资源",
       "importance": 0
     },
     {
-      "id": "edutech-ch3-fc-kp122",
+      "id": "edutech-ch3-fc-kp124",
       "chapterId": "edutech-ch3",
       "question": "按本质属性是什么？",
       "answer": "```\n人力资源 → 教师是最重要的人力资源\n非人力资源 → 教育信息 + 学习媒体 + 学习场所\n  教育信息五类：\n  ① 教育内容信息（最基本特征：传递教育内容）",
       "importance": 0
     },
     {
-      "id": "edutech-ch3-fc-kp123",
+      "id": "edutech-ch3-fc-kp125",
       "chapterId": "edutech-ch3",
       "question": "媒体的两层含义包括哪些？",
       "answer": "① 承载信息所使用的符号系统\n② 存贮和加工、传递信息的实体",
       "importance": 0
     },
     {
-      "id": "edutech-ch3-fc-kp124",
+      "id": "edutech-ch3-fc-kp126",
       "chapterId": "edutech-ch3",
       "question": "次重大飞跃是什么？",
       "answer": "``\n教科书生产 → 直观教具使用 → 音像材料涌现 → 计算机和多媒体网络发明\n``",
       "importance": 0
     },
     {
-      "id": "edutech-ch3-fc-kp125",
+      "id": "edutech-ch3-fc-kp127",
       "chapterId": "edutech-ch3",
       "question": "大特性 = 与教学系统设计中教学媒体特性相同是什么？",
       "answer": "``\n固定性 / 散播性 / 重复性 / 组合性 / 工具性 / 能动性\n``",
       "importance": 0
     },
     {
-      "id": "edutech-ch3-fc-kp126",
+      "id": "edutech-ch3-fc-kp128",
       "chapterId": "edutech-ch3",
       "question": "新型媒体是什么？",
       "answer": "| 类型 | 核心 |\n|------|------|\n| **超媒体** | = 多媒体 + 超文本（非线性信息结构） |\n| **虚拟现实** | 多媒体 + 仿真技术，身临其境 |\n| **流媒体** | 流式传输，突破低带宽瓶颈 |\n---",
       "importance": 0
     },
     {
-      "id": "edutech-ch3-fc-kp127",
+      "id": "edutech-ch3-fc-kp129",
       "chapterId": "edutech-ch3",
       "question": "布卢姆三领域是什么？",
       "answer": "| 领域 | 层次（低→高） | 提出者 |\n|------|-------------|--------|\n| **认知** | 知道→领会→运用→分析→综合→评价 | 布卢姆 |\n| **情感** | 接受→反应→价值判断→价值组织→价值个性化 | 克拉斯沃尔 |\n| **动作技能** | 知觉→准备→引导反应→机械练习→复杂反应→创作 | 辛普森 |",
       "importance": 0
     },
     {
-      "id": "edutech-ch3-fc-kp128",
+      "id": "edutech-ch3-fc-kp130",
       "chapterId": "edutech-ch3",
       "question": "加涅学习结果五类型是什么？",
       "answer": "``\n言语信息 + 智力技能 + 认知策略 + 动作技能 + 态度\n智力技能四个层次：辨别 → 概念 → 规则 → 高级规则（问题解决）\n``",
       "importance": 0
     },
     {
-      "id": "edutech-ch3-fc-kp129",
+      "id": "edutech-ch3-fc-kp131",
       "chapterId": "edutech-ch3",
       "question": "两套分类的区别是什么？",
       "answer": "``\n布卢姆：测量学标准 → 未涉及知识本质和学习条件 → 指导教学缺乏可操作性\n加涅：  现代认知心理学 → 阐明每类结果的学习过程/条件/层次关系 → 可指导实际教学\n``\n---",
       "importance": 0
     },
     {
-      "id": "edutech-ch3-fc-kp130",
+      "id": "edutech-ch3-fc-kp132",
       "chapterId": "edutech-ch3",
       "question": "加涅信息加工学习过程模型是什么？",
       "answer": "```\n环境刺激 → 感受器 → 感觉登记 → 选择性知觉 → 短时记忆(7±2项目)\n                                              ↕ 复述/编码\n                                          长时记忆\n                                              ↕ 提取",
       "importance": 1
     },
     {
-      "id": "edutech-ch3-fc-kp131",
+      "id": "edutech-ch3-fc-kp133",
       "chapterId": "edutech-ch3",
       "question": "维特罗克人类学习生成过程模型是什么？",
       "answer": "``\n核心：学习者主动建构信息意义（认知建构主义代表）\n过程：动机→选择性注意→建构意义(语义编码)→检验(与感觉信息/长时记忆对照)\n      →成功→加入长时记忆 / 不成功→返回重试\n``\n---",
       "importance": 0
     },
     {
-      "id": "edutech-ch3-fc-kp132",
+      "id": "edutech-ch3-fc-kp134",
       "chapterId": "edutech-ch3",
       "question": "影响学习过程的六大因素包括哪些？",
       "answer": "① 身心发展状况（生理+心理）\n② 已有认知结构水平（奥苏贝尔三特性）★\n③ 学习策略（认知策略/元认知策略/资源管理策略）\n④ 学习风格（场依存/场独立、冲动/沉思等）\n⑤ 学习动机（认知内驱力/自我提高内驱力/附属内驱力）★\n⑥ 外部环境",
       "importance": 0
     },
     {
-      "id": "edutech-ch3-fc-kp133",
+      "id": "edutech-ch3-fc-kp135",
       "chapterId": "edutech-ch3",
       "question": "要素是什么？",
       "answer": "``\n学生 + 教师 + 学习内容 + 学习媒体\n``",
       "importance": 0
     },
     {
-      "id": "edutech-ch3-fc-kp134",
+      "id": "edutech-ch3-fc-kp136",
       "chapterId": "edutech-ch3",
       "question": "列出教学规律（论述题重点）的要点",
       "answer": "① 教学的目的性 → 明确教学目标\n② 教学与发展的统一性 → 教学促进学生发展\n③ 教师主导与学生主体的统一 → 师生双边互动\n④ 教学的教育性 → 教书与育人统一\n⑤ 掌握知识与培养能力的统一",
       "importance": 0
     },
     {
-      "id": "edutech-ch3-fc-kp135",
+      "id": "edutech-ch3-fc-kp137",
       "chapterId": "edutech-ch3",
       "question": "教学结构是什么？",
       "answer": "```\n传统：以教师为中心\n新型：主导—主体相结合 ← 信息技术与课程整合的目标\n要素：教师、学生、教学内容、教学媒体\n核心变革：教师与学生的地位、作用和关系",
       "importance": 0
     },
     {
-      "id": "edutech-ch3-fc-ep136",
+      "id": "edutech-ch3-fc-ep138",
       "chapterId": "edutech-ch3",
       "question": "⚠️ 加涅八阶段",
       "answer": "动机→领会→习得→保持→回忆→概括→操作→反馈（别漏\"概括\"）",
       "importance": 4
     },
     {
-      "id": "edutech-ch3-fc-ep137",
+      "id": "edutech-ch3-fc-ep139",
       "chapterId": "edutech-ch3",
       "question": "⚠️ 认知结构三特性",
       "answer": "可利用性/可分辨性/稳固性（奥苏贝尔提出）",
       "importance": 4
     },
     {
-      "id": "edutech-ch3-fc-ep138",
+      "id": "edutech-ch3-fc-ep140",
       "chapterId": "edutech-ch3",
       "question": "⚠️ 元认知策略三种",
       "answer": "计划策略/监视策略/调节策略",
       "importance": 4
     },
     {
-      "id": "edutech-ch3-fc-ep139",
+      "id": "edutech-ch3-fc-ep141",
       "chapterId": "edutech-ch3",
       "question": "⚠️ 加涅学习结果≠布卢姆目标分类",
       "answer": "前者可指导教学，后者偏测量",
       "importance": 4
     },
     {
-      "id": "edutech-ch3-fc-ep140",
+      "id": "edutech-ch3-fc-ep142",
       "chapterId": "edutech-ch3",
       "question": "⚠️ 学习媒体四次飞跃",
       "answer": "教科书→直观教具→音像材料→计算机+网络",
       "importance": 4
     },
     {
-      "id": "edutech-ch3-fc-ep141",
+      "id": "edutech-ch3-fc-ep143",
       "chapterId": "edutech-ch3",
       "question": "⚠️ 短时记忆容量",
       "answer": "7±2个项目",
       "importance": 4
     },
     {
-      "id": "edutech-ch5-fc-kp142",
+      "id": "edutech-ch5-fc-kp144",
       "chapterId": "edutech-ch5",
       "question": "设计观的四种演变是什么？",
       "answer": "| 设计观 | 核心特征 | 问题 |\n|--------|---------|------|\n| **媒体观** | 教学设计=媒体选择过程，设计者=媒体专家 | 媒体与教学过程割裂 |\n| **狭义系统观** | 行为目标+任务分析+媒体制作+策略评价 | **缺少需求分析和形成性评价** |\n| **标准系统观** | 比狭义多了需求分析+形成性评价+总结性评价 | 线性思维、硬系统 |\n| **系统设计观** | 理论+实践结合，多理论基础（教育/心理/系统/传播/人际/管理） | — |",
       "importance": 0
     },
     {
-      "id": "edutech-ch5-fc-kp143",
+      "id": "edutech-ch5-fc-kp145",
       "chapterId": "edutech-ch5",
       "question": "影响教学设计发展的四大因素包括哪些？",
       "answer": "① 系统方法\n② 学习理论\n③ 科学技术 → 信息技术+建构主义结合推动发展\n④ 传播理论+教学理论",
       "importance": 0
     },
     {
-      "id": "edutech-ch5-fc-kp144",
+      "id": "edutech-ch5-fc-kp146",
       "chapterId": "edutech-ch5",
       "question": "加涅是什么？",
       "answer": "``\n学习结果五类型 + 九段教学事件 → \"九五矩阵\"\n九事件：引起注意→告知目标→刺激回忆先决条件→呈现刺激材料\n       →提供学习指导→诱导行为→提供反馈→评价表现→增强记忆促进迁移\n``",
       "importance": 0
     },
     {
-      "id": "edutech-ch5-fc-kp145",
+      "id": "edutech-ch5-fc-kp147",
       "chapterId": "edutech-ch5",
       "question": "梅瑞尔是什么？",
       "answer": "```\nCDT（成分显示理论）：知识二维分类\n  行为维：记忆/运用/发现 × 内容维：事实/概念/过程/原理\n  = 10种教学活动成分\n  PPF(基本呈现形式) + SPF(辅助呈现形式) + IDR(呈现间联系)",
       "importance": 0
     },
     {
-      "id": "edutech-ch5-fc-kp146",
+      "id": "edutech-ch5-fc-kp148",
       "chapterId": "edutech-ch5",
       "question": "列出教学处方理论（郑永柏）的要点",
       "answer": "① 不同条件×不同结果→不同方法\n② 分析越详细、处理越全面→教学越有效\n③ 条件/方法/结果不断发展→不断更新处方知识库",
       "importance": 0
     },
     {
-      "id": "edutech-ch5-fc-kp147",
+      "id": "edutech-ch5-fc-kp149",
       "chapterId": "edutech-ch5",
       "question": "\"以教为主\"教学策略补充是什么？",
       "answer": "| 策略 | 步骤 | 适用 |\n|------|------|------|\n| **五段教学** | 激发动机→复习旧课→**讲授新课**→运用巩固→检查效果 | 接受学习 |\n| **九段教学** ★ | 加涅提出，9步，可操作性强 | 适用于CAI |\n| **假设-推理** | 问题→假设→推理→验证→结论 | 数理学科 |\n| **示范-模仿** | 定向→参与性练习→自主练习→迁移 | 动作技能 |\n---",
       "importance": 0
     },
     {
-      "id": "edutech-ch5-fc-kp148",
+      "id": "edutech-ch5-fc-kp150",
       "chapterId": "edutech-ch5",
       "question": "\"以学为主\"教学设计七原则包括哪些？",
       "answer": "① 以问题为核心驱动学习\n② 强调以学生为中心\n③ 强调情境创设（真实情境）\n④ 强调协作学习\n⑤ 强调非量化的整体评价（反对过分细化标准参照评价）\n⑥ 提供学习资源+认知工具\n⑦ 重视运用自主学习策略",
       "importance": 0
     },
     {
-      "id": "edutech-ch5-fc-kp149",
+      "id": "edutech-ch5-fc-kp151",
       "chapterId": "edutech-ch5",
       "question": "列出活动理论（Activity Theory）的要点",
       "answer": "① 学生行为活动分析设计（首要工作）\n② 学习环境设计\n③ 学习策略设计\n④ 教学传递设计\n⑤ 综合评价",
       "importance": 0
     },
     {
-      "id": "edutech-ch5-fc-kp150",
+      "id": "edutech-ch5-fc-kp152",
       "chapterId": "edutech-ch5",
       "question": "教学设计自动化（AID）包括哪些？",
       "answer": "① 专家系统（核心：知识库建立）\n② 咨询系统（知识库+用户界面+语义查询器）\n③ 信息管理系统（如IDE）\n④ EPSS（电子绩效支持系统）\n⑤ 写作工具",
       "importance": 0
     },
     {
-      "id": "edutech-ch5-fc-kp151",
+      "id": "edutech-ch5-fc-kp153",
       "chapterId": "edutech-ch5",
       "question": "\"学教并重\"模式 + 宏观设计论的核心内容是什么？",
       "answer": "```\n学教并重模式特点：\n  - 灵活选择\"传递-接受\"或\"发现式\"分支\n  - 传递-接受采用先行组织者策略\n  - 发现式吸收传递-接受长处",
       "importance": 0
     },
     {
-      "id": "edutech-ch5-fc-ep152",
+      "id": "edutech-ch5-fc-ep154",
       "chapterId": "edutech-ch5",
       "question": "⚠️ 狭义系统观缺少什么",
       "answer": "需求分析+形成性评价",
       "importance": 4
     },
     {
-      "id": "edutech-ch5-fc-ep153",
+      "id": "edutech-ch5-fc-ep155",
       "chapterId": "edutech-ch5",
       "question": "⚠️ CDT的二维分类",
       "answer": "行为(记忆/运用/发现) × 内容(事实/概念/过程/原理)",
       "importance": 4
     },
     {
-      "id": "edutech-ch5-fc-ep154",
+      "id": "edutech-ch5-fc-ep156",
       "chapterId": "edutech-ch5",
       "question": "⚠️ ITT知识三种",
       "answer": "实体/活动/过程",
       "importance": 4
     },
     {
-      "id": "edutech-ch5-fc-ep155",
+      "id": "edutech-ch5-fc-ep157",
       "chapterId": "edutech-ch5",
       "question": "⚠️ 教学处方公式",
       "answer": "m=f(c,o)，郑永柏提出",
       "importance": 4
     },
     {
-      "id": "edutech-ch5-fc-ep156",
+      "id": "edutech-ch5-fc-ep158",
       "chapterId": "edutech-ch5",
       "question": "⚠️ 活动理论分析基本单位",
       "answer": "活动及活动系统",
       "importance": 4
     },
     {
-      "id": "edutech-ch5-fc-ep157",
+      "id": "edutech-ch5-fc-ep159",
       "chapterId": "edutech-ch5",
       "question": "⚠️ AID五种工具",
       "answer": "不能混淆功能",
       "importance": 4
     },
     {
-      "id": "edutech-ch6-fc-kp158",
+      "id": "edutech-ch6-fc-kp160",
       "chapterId": "edutech-ch6",
       "question": "开发五阶段是什么？",
       "answer": "``\n分析 → 设计 → 开发 → 实施 → 维护\n(需求/价值/风险) (总体+细化) (制作调试) (检测+形成性评价) (反馈优化)\n``",
       "importance": 0
     },
     {
-      "id": "edutech-ch6-fc-kp159",
+      "id": "edutech-ch6-fc-kp161",
       "chapterId": "edutech-ch6",
       "question": "类开发技术是什么？",
       "answer": "| 技术 | 核心特征 |\n|------|---------|\n| **印刷技术** | 文本+视觉材料，线性阅读，静态，单向传播 |\n| **视听技术** | 声音/图像，动态 |\n| **基于计算机的技术** | 交互式，多媒体，超文本 |\n| **整合技术** | 多媒体与网络结合 |",
       "importance": 0
     },
     {
-      "id": "edutech-ch6-fc-kp160",
+      "id": "edutech-ch6-fc-kp162",
       "chapterId": "edutech-ch6",
       "question": "网络课程 + 智能教学系统 + 集成化系统是什么？",
       "answer": "``\n网络课程 = 教学内容 + 网络教学支撑环境\n智能导师系统（AI Agent）→ 智能代理教学系统→智能超媒体教学系统\n集成化系统：积件库→积件组合平台→集成化学习环境→EPSS→网络教学管理支撑平台\n``\n---",
       "importance": 0
     },
     {
-      "id": "edutech-ch6-fc-kp161",
+      "id": "edutech-ch6-fc-kp163",
       "chapterId": "edutech-ch6",
       "question": "运用各子范畴关系是什么？",
       "answer": "``\n教学资源的应用 → 基于Web的教学系统应用 → 信息化教学应用 → 绩效技术\n``",
       "importance": 0
     },
     {
-      "id": "edutech-ch6-fc-kp162",
+      "id": "edutech-ch6-fc-kp164",
       "chapterId": "edutech-ch6",
       "question": "绩效技术 （重要考点）包括哪些？",
       "answer": "① 关注组织/个体绩效的改进\n② 采用系统方法（分析→设计→开发→实施→评价）\n③ 以绩效分析为起点（先分析绩效差距原因，再设计方案）\n④ 追求绩效改进的投资回报率",
       "importance": 1
     },
     {
-      "id": "edutech-ch6-fc-kp163",
+      "id": "edutech-ch6-fc-kp165",
       "chapterId": "edutech-ch6",
       "question": "基于Web的教学系统是什么？",
       "answer": "``\n自适应学习系统：根据学习者特征自动调整教学内容和策略\n协作学习系统：支持学习者之间的合作交流\n``\n---",
       "importance": 0
     },
     {
-      "id": "edutech-ch6-fc-kp164",
+      "id": "edutech-ch6-fc-kp166",
       "chapterId": "edutech-ch6",
       "question": "核心内容速查是什么？",
       "answer": "| 管理类型 | 主要内容 |\n|---------|---------|\n| **硬件资源管理** | 设备采购、保管、维护 |\n| **软件资源管理** | 媒体材料、工具软件的规划与使用 |\n| **两种主要方法** | **集中式管理** / **分布式管理** |\n| **教学过程信息化管理** | 利用信息技术跟踪、分析教学过程 |\n| **项目管理** | 网络资源库建设：计划/组织机构/质量管理/风险管理 |\n| **知识管理** | 知识的获取/存储/共享/应用/创新 |",
       "importance": 0
     },
     {
-      "id": "edutech-ch6-fc-kp165",
+      "id": "edutech-ch6-fc-kp167",
       "chapterId": "edutech-ch6",
       "question": "知识管理对网络学习的作用包括哪些？",
       "answer": "① 有利于学习者进行意义建构\n② 有利于学习资源的获取\n③ 有利于学习者交流协作\n④ 有利于激发学习者的创造性思维",
       "importance": 0
     },
     {
-      "id": "edutech-ch6-fc-kp166",
+      "id": "edutech-ch6-fc-kp168",
       "chapterId": "edutech-ch6",
       "question": "教学资源评价是什么？",
       "answer": "```\n基本原则：科学性/教育性/技术性/艺术性\n评价类型：\n  诊断性评价 → 在教学前\n  形成性评价 → 在开发过程中",
       "importance": 0
     },
     {
-      "id": "edutech-ch6-fc-kp167",
+      "id": "edutech-ch6-fc-kp169",
       "chapterId": "edutech-ch6",
       "question": "教学过程评价包括哪些？",
       "answer": "① 学习量规评价\n② 学习档案评价（电子学档）\n③ 学习契约评价",
       "importance": 0
     },
     {
-      "id": "edutech-ch6-fc-kp168",
+      "id": "edutech-ch6-fc-kp170",
       "chapterId": "edutech-ch6",
       "question": "评价进展是什么？",
       "answer": "``\n网络教学评价：强调过程评价+多元评价+自我评价\n技能性非客观题测评：计算机辅助评价的新进展\n``\n---",
       "importance": 0
     },
     {
-      "id": "edutech-ch6-fc-kp169",
+      "id": "edutech-ch6-fc-kp171",
       "chapterId": "edutech-ch6",
       "question": "创新人才培养要求包括哪些？",
       "answer": "① 创新能力和高尚的道德精神\n② 较高的信息素养\n③ 现代教育技术为创新人才培养提供支持",
       "importance": 0
     },
     {
-      "id": "edutech-ch6-fc-kp170",
+      "id": "edutech-ch6-fc-kp172",
       "chapterId": "edutech-ch6",
       "question": "教育信息化包括哪些？",
       "answer": "① 构建信息化教学环境\n② 建设信息化的教学资源\n③ 培养师生的信息素养\n④ 推进信息技术与课程整合\n⑤ 建立信息化的教学评价体系",
       "importance": 0
     },
     {
-      "id": "edutech-ch6-fc-kp171",
+      "id": "edutech-ch6-fc-kp173",
       "chapterId": "edutech-ch6",
       "question": "信息技术与课程深层次整合包括哪些？",
       "answer": "① 运用先进的教育理论为指导（建构主义等）\n② 围绕新型教学结构的创建来整合\n③ 注意运用\"学教并重\"的教学设计\n④ 重视各学科教学资源的建设\n⑤ 根据学科特点进行整合",
       "importance": 1
     },
     {
-      "id": "edutech-ch6-fc-ep172",
+      "id": "edutech-ch6-fc-ep174",
       "chapterId": "edutech-ch6",
       "question": "⚠️ 教学资源管理两种方法",
       "answer": "集中式 / 分布式",
       "importance": 4
     },
     {
-      "id": "edutech-ch6-fc-ep173",
+      "id": "edutech-ch6-fc-ep175",
       "chapterId": "edutech-ch6",
       "question": "⚠️ 知识管理四个环节",
       "answer": "获取→存储→共享→应用创新",
       "importance": 4
     },
     {
-      "id": "edutech-ch6-fc-ep174",
+      "id": "edutech-ch6-fc-ep176",
       "chapterId": "edutech-ch6",
       "question": "⚠️ 教学资源评价三原则",
       "answer": "科学性/教育性/技术性/艺术性（四原则）",
       "importance": 4
     },
     {
-      "id": "edutech-ch6-fc-ep175",
+      "id": "edutech-ch6-fc-ep177",
       "chapterId": "edutech-ch6",
       "question": "⚠️ EPSS出现在两个章节",
       "answer": "第6章开发领域和第7章运用领域",
       "importance": 4
     },
     {
-      "id": "research-ch1-fc-kp176",
+      "id": "research-ch1-fc-kp178",
       "chapterId": "research-ch1",
       "question": "科学研究的根本目的包括哪些？",
       "answer": "① 一般的人类研究 —— 依据本能预测，准确性低\n② 传统与权威    —— 传统让人不怀疑，权威的错论误导人",
       "importance": 0
     },
     {
-      "id": "research-ch1-fc-kp177",
+      "id": "research-ch1-fc-kp179",
       "chapterId": "research-ch1",
       "question": "组辩证关系速查表是什么？",
       "answer": "| 关系 | A | B | 要点 |\n|------|---|---|------|\n| **解释方式** | 个案式：穷尽特定个案**所有**原因 | 通则式：寻找一般原因，概括性了解 | A→深，B→广 |\n| **推理方向** | 归纳：**个别→一般** | 演绎：**一般→个别** | 方向相反 |\n| **数据类型** | 定量：数学语言，统计，准确 | 定性：文字语言，直觉经验，丰富但粗糙 | 定性是定量依据，定量是定性具体化 |\n| **研究目的** | 纯粹研究：推进知识，不关心立即应用 | 应用研究：将知识付诸行动，解决实际问题 | 动机不同 |\n> ★ 定性→个案式，定量→通则式。两者结合最佳。\n---",
       "importance": 0
     },
     {
-      "id": "research-ch1-fc-kp178",
+      "id": "research-ch1-fc-kp180",
       "chapterId": "research-ch1",
       "question": "教育技术研究的概念是什么？",
       "answer": "```\n教育技术研究 = 通过科学的研究方法 + 按一定研究程序\n              + 应用现代技术手段\n              + 对教育技术学领域的现象和问题进行研究分析\n              → 探究本质和规律，解决存在问题",
       "importance": 0
     },
     {
-      "id": "research-ch1-fc-kp179",
+      "id": "research-ch1-fc-kp181",
       "chapterId": "research-ch1",
       "question": "研究内容的领域是什么？",
       "answer": "```\n基础性探索：               应用性探索：\n  a.教学设计研究              a.信息技术与学校教育整合\n  b.学习环境设计研究           b.企业培训绩效技术\n  c.创新性技术研究             c.远程教育与远程培训",
       "importance": 0
     },
     {
-      "id": "research-ch1-fc-kp180",
+      "id": "research-ch1-fc-kp182",
       "chapterId": "research-ch1",
       "question": "类研究方法是什么？",
       "answer": "```\n哲学方法（宏观指导） → 如辩证唯物主义法\n一般研究方法         → 定性（内容分析/行动研究/访谈/实地考察）\n                      定量（实验研究/调查研究）\n综合研究法           → 系统论/软件工程/EDR/定性定量结合",
       "importance": 0
     },
     {
-      "id": "research-ch1-fc-kp181",
+      "id": "research-ch1-fc-kp183",
       "chapterId": "research-ch1",
       "question": "文献三级是什么？",
       "answer": "``\n一级文献：原始文献（未经加工）\n二级文献：目录、题录、文摘、索引、书目指南\n三级文献：综述、述评、词典、年鉴、手册\n``",
       "importance": 0
     },
     {
-      "id": "research-ch1-fc-kp182",
+      "id": "research-ch1-fc-kp184",
       "chapterId": "research-ch1",
       "question": "常用检索工具是什么？",
       "answer": "| 类别 | 工具 |\n|------|------|\n| 索引 | SCIE、ISTP(ISI会议录)、JCR(期刊引证报告)、EI(工程索引)、CSSCI(中文社科引文索引) |\n| 中文数据库 | CNKI、万方、维普 |\n| 外文数据库 | EBSCO、ScienceDirect、SpringerLink |",
       "importance": 0
     },
     {
-      "id": "research-ch1-fc-kp183",
+      "id": "research-ch1-fc-kp185",
       "chapterId": "research-ch1",
       "question": "种查询方式包括哪些？",
       "answer": "① 按文献类型查询（一/二/三级）\n② \"滚雪球\"式 —— 按时间由近到远 → 追参考文献继续搜\n③ 通过检索工具查询（5步：分析课题→选工具→定检索词→分析结果→获取原文）\n④ 由主到次 —— 先权威书籍 → 再期刊网络",
       "importance": 0
     },
     {
-      "id": "research-ch2-fc-kp184",
+      "id": "research-ch2-fc-kp186",
       "chapterId": "research-ch2",
       "question": "按研究目的是什么？",
       "answer": "| 类型 | 目的 | 难度 |\n|------|------|------|\n| **描述性** | 描述现象具体情况，发现新特点规律 | 最小，最基本 |\n| **因果性** | 揭示因果关系，回答\"为什么\"\"怎么办\" | 较大 |\n| **预测性** | 预测发展趋势和状况 | **最大**，层次最高 |",
       "importance": 0
     },
     {
-      "id": "research-ch2-fc-kp185",
+      "id": "research-ch2-fc-kp187",
       "chapterId": "research-ch2",
       "question": "按成果分类是什么？",
       "answer": "``\n理论性课题 → 探索教育规律、揭示本质，广泛指导意义\n应用性课题 → 解决实际问题，产出具体方案或对策\n综合性课题 → 理论+应用\n``",
       "importance": 0
     },
     {
-      "id": "research-ch2-fc-kp186",
+      "id": "research-ch2-fc-kp188",
       "chapterId": "research-ch2",
       "question": "按课题性质是什么？",
       "answer": "``\n探索性 → 前人未解决/未涉及，填补空白\n发展性 → 前人研究基础上的延伸拓展、修正完善\n争鸣性 → 众说纷纭暂无定论，最好提出自己与众不同的观点\n``\n---",
       "importance": 0
     },
     {
-      "id": "research-ch2-fc-kp187",
+      "id": "research-ch2-fc-kp189",
       "chapterId": "research-ch2",
       "question": "选题四原则是什么？",
       "answer": "| 原则 | 核心 | 要点 |\n|------|------|------|\n| **需要性** | 课题有价值 | 理论价值（修正补充理论）+ 应用价值（解决现实问题） |\n| **创造性** | 有新意 | 新课题=创新；新角度=创新；新技术/理论应用=创新 |\n| **科学性** | 有依据 | 以科学理论和事实为依据，符合客观规律 |\n| **可行性** ★ | **决定性作用** | 主观条件（知识储备/能力/兴趣）+ 客观条件（经费/器材/科技水平） |\n---",
       "importance": 1
     },
     {
-      "id": "research-ch2-fc-kp188",
+      "id": "research-ch2-fc-kp190",
       "chapterId": "research-ch2",
       "question": "部分结构是什么？",
       "answer": "``\n前言 → 阐明写作目的、课题、概念、范围\n主体 → 历史发展+现状+动向 + 客观预测 + 指出不足/空白（重点）\n总结 → 研究意义+预期成果+待解决问题+自己建议\n参考文献 → 注明所引资料\n``",
       "importance": 0
     },
     {
-      "id": "research-ch2-fc-kp189",
+      "id": "research-ch2-fc-kp191",
       "chapterId": "research-ch2",
       "question": "两种引用方式是什么？",
       "answer": "```\n方式1：作者为主 (Author Prominent)\n  → \"Tiene(2000)……\" —— 突出的重点是作者\n方式2：观点为主\n  → \"……(Tiene, 2000)\" —— 突出的重点是观点",
       "importance": 0
     },
     {
-      "id": "research-ch2-fc-kp190",
+      "id": "research-ch2-fc-kp192",
       "chapterId": "research-ch2",
       "question": "种变量是什么？",
       "answer": "```\n自变量(Independent Variable)   → 研究者主动操纵控制，引起其他变量变化\n                                   例：教学媒体、教学方法、教学环境\n因变量(Dependent Variable)     → 随自变量变化而变化，可观测测量\n                                   例：知识积累、能力变化、学习行为、态度转变",
       "importance": 0
     },
     {
-      "id": "research-ch2-fc-kp191",
+      "id": "research-ch2-fc-kp193",
       "chapterId": "research-ch2",
       "question": "种假设陈述方式是什么？",
       "answer": "| 方式 | 形式 | 用途 |\n|------|------|------|\n| **描述式** | \"在C条件下，A具有B的性质\" | 描述外部联系 |\n| **条件式** | \"在C条件下，如果有A，则有B\" | 揭示因果关系 |\n| **差异式** | \"在C条件下，A和B之间存在差异(A>B或A<B)\" | 指明具体差异 |\n| **预测式** | \"在C条件下，随着A的改变，B将发生变化\" | 科学预测未来趋势 |\n> 假设三要素：条件因素 + 自变量 + 因变量，必须**可被检验**\n---",
       "importance": 0
     },
     {
-      "id": "research-ch2-fc-kp192",
+      "id": "research-ch2-fc-kp194",
       "chapterId": "research-ch2",
       "question": "概念化与操作化是什么？",
       "answer": "```\n概念化：模糊术语 → 明确化、精确化的思维过程\n        （赋予明确的、共识的意义）\n操作化：抽象术语 → 可测量指标的过程\n        （概念化的延伸，明确变量的变异范围）",
       "importance": 0
     },
     {
-      "id": "research-ch2-fc-kp193",
+      "id": "research-ch2-fc-kp195",
       "chapterId": "research-ch2",
       "question": "对比种抽样方法对比的各个维度",
       "answer": "| 方法 | 操作 | 适用 | 优点 | 缺点 |\n|------|------|------|------|------|\n| **简单随机** | 完全随机抽取 | 差异小、数量少 | 操作简单 | 总体大时难编号 |\n| **等距抽样** | 等间隔依次抽取 | 总体数量多 | 均匀分布，简便 | 可能有隐蔽不合格样本 |\n| **分层抽样** ★ | 按属性分层后各层随机抽 | 差异大、单位多 | **准确性更高**，可估计各层 | — |\n| **整体抽样** | 分群后整群被抽 | 便于组织实施 | 组织方便，省经费 | 误差大于随机抽样 |\n> ★ 样本容量：>30 = 大样本，<30 = 小样本\n---",
       "importance": 0
     },
     {
-      "id": "research-ch2-fc-ep194",
+      "id": "research-ch2-fc-ep196",
       "chapterId": "research-ch2",
       "question": "⚠️ 分层抽样 ≠ 整体抽样",
       "answer": "前者在每层各抽一部分，后者抽整群",
       "importance": 4
     },
     {
-      "id": "research-ch3-fc-kp195",
+      "id": "research-ch3-fc-kp197",
       "chapterId": "research-ch3",
       "question": "什么是定义与特点？",
       "answer": "```\n调查研究法 = 有目的、有计划、系统地搜集研究对象现实/历史状况的材料\n            → 借以发现问题、探索教育技术规律\n四大特点：适用性广 / 效率高范围广 / 形式灵活手段多样 / 自然真实简便易行\n两大缺点：",
       "importance": 0
     },
     {
-      "id": "research-ch3-fc-kp196",
+      "id": "research-ch3-fc-kp198",
       "chapterId": "research-ch3",
       "question": "大原则是什么？",
       "answer": "| 原则 | 核心 |\n|------|------|\n| **客观性** | 按事物本来面目了解事实，无条件尊重事实 |\n| **多向性** | 多角度多侧面，横向+纵向、宏观+微观、多因素+主因素 |\n| **灵活性** | 根据对象特点灵活对待，随时调整 |\n| **定性定量结合** | — |\n---",
       "importance": 0
     },
     {
-      "id": "research-ch3-fc-kp197",
+      "id": "research-ch3-fc-kp199",
       "chapterId": "research-ch3",
       "question": "优缺点是什么？",
       "answer": "```\n优点：高效 / 客观 / 统一 / 广泛\n缺点：缺乏弹性 / 容易被误解 / 回收率低\n适用范围：\n  - 适用现实问题的调查",
       "importance": 0
     },
     {
-      "id": "research-ch3-fc-kp198",
+      "id": "research-ch3-fc-kp200",
       "chapterId": "research-ch3",
       "question": "两种问卷类型是什么？",
       "answer": "| 类型 | 别名 | 特点 | 适用 |\n|------|------|------|------|\n| **结构型** | 封闭式 | 提供有限量答案，只能选择 | 广泛、不同阶层对象 |\n| **无结构型** | 开放式 | 无严格结构，自由回答 | 深入调查，与结构型结合使用 |",
       "importance": 0
     },
     {
-      "id": "research-ch3-fc-kp199",
+      "id": "research-ch3-fc-kp201",
       "chapterId": "research-ch3",
       "question": "问卷四部分结构包括哪些？",
       "answer": "① 名称 ── 直呼其名/指明对象/指明对象+内容\n② 前言 ── 称呼+目的意义+希望+匿名保证+填答说明+致谢+身份时间\n③ 主体 ★\n④ 结语 ── 调查基本信息+再次感谢",
       "importance": 0
     },
     {
-      "id": "research-ch3-fc-kp200",
+      "id": "research-ch3-fc-kp202",
       "chapterId": "research-ch3",
       "question": "类问题是什么？",
       "answer": "```\n背景性问题 → 被调查者个人基本情况（必不可少，分析重要依据）\n客观性问题 → 已发生和正在发生的各种事实和行为\n主观性问题 → 思想、感情、态度、愿望等主观世界状况\n检验性问题 → 特为检验回答真实性准确性设计，安排在问卷不同位置互相检验",
       "importance": 0
     },
     {
-      "id": "research-ch3-fc-kp201",
+      "id": "research-ch3-fc-kp203",
       "chapterId": "research-ch3",
       "question": "调查研究法一般步骤包括哪些？",
       "answer": "① 确立调查课题、制订调查计划（注意必要性+可能性，题目切忌过大）\n② 搜集材料（保证客观性/统一标准/事实与意见分开/多手段多角度）\n③ 整理材料\n④ 撰写调查报告（结构：导言+正文+结论；形式：描述性/解释性/建议性）",
       "importance": 0
     },
     {
-      "id": "research-ch3-fc-ep202",
+      "id": "research-ch3-fc-ep204",
       "chapterId": "research-ch3",
       "question": "⚠️ 结构型≠结构化访谈",
       "answer": "结构型问卷=封闭式，有固定选项",
       "importance": 4
     },
     {
-      "id": "research-ch3-fc-ep203",
+      "id": "research-ch3-fc-ep205",
       "chapterId": "research-ch3",
       "question": "⚠️ 检验性问题的作用",
       "answer": "检验回答真实性和准确性，安排在问卷不同位置",
       "importance": 4
     },
     {
-      "id": "research-ch4-fc-kp204",
+      "id": "research-ch4-fc-kp206",
       "chapterId": "research-ch4",
       "question": "什么是概述？",
       "answer": "``\n教育实验研究 = 在人工控制教育现象的情况下\n              + 有目的有计划地观察教育现象的变化和结果\n              → 确定因果关系\n核心特征：主动操纵变量 + 控制干扰因素\n``",
       "importance": 0
     },
     {
-      "id": "research-ch4-fc-kp205",
+      "id": "research-ch4-fc-kp207",
       "chapterId": "research-ch4",
       "question": "教育实验效度是什么？",
       "answer": "| 效度类型 | 核心问题 | 含义 |\n|---------|---------|------|\n| **内在效度** | 实验处理是否真的导致了结果变化？ | 排除其他可能的解释 |\n| **外在效度** | 实验结果的推广范围有多大？ | 结果的可推广性 |",
       "importance": 0
     },
     {
-      "id": "research-ch4-fc-kp206",
+      "id": "research-ch4-fc-kp208",
       "chapterId": "research-ch4",
       "question": "种实验设计是什么？",
       "answer": "| 设计类型 | 特征 | 优缺点 |\n|---------|------|--------|\n| **单组前测后测设计** | 一组：前测→处理→后测 | 简单但效度低，无法排除历史/成熟影响 |\n| **随机化实验组控制组前测后测设计** | 两组随机分配，都有前测后测 | ★ 经典设计，效度最高 |\n| **拉丁方设计** | 多因素轮换，控制顺序效应 | 适用于多处理比较 |\n| **单组时间序列分析** | 多次前测→处理→多次后测 | 可观察变化趋势 |\n> ★ 实验组/控制组 + 前测/后测 → 区分\"处理效果\"和\"自然成长\"\n---",
       "importance": 0
     },
     {
-      "id": "research-ch4-fc-kp207",
+      "id": "research-ch4-fc-kp209",
       "chapterId": "research-ch4",
       "question": "基本概念是什么？",
       "answer": "```\n内容分析法 = 对明显的传播内容作客观、系统量化并加以描述的方法\n特征：\n  ① 明显的传播内容 —— 直接显现的内容，不是潜在含义\n  ② 客观 —— 按事先制定的类目表格判断记录",
       "importance": 0
     },
     {
-      "id": "research-ch4-fc-kp208",
+      "id": "research-ch4-fc-kp210",
       "chapterId": "research-ch4",
       "question": "应用模式包括哪些？",
       "answer": "① 确定研究目的和假设\n② 确定研究样本（抽样）\n③ 确定分析单元（词/主题/人物/句子/段落/项目等）\n④ 建立分析类目（互斥 + 穷尽 + 可靠）\n⑤ 编码和信度检验\n⑥ 数据统计分析\n⑦ 解释结果、得出结论",
       "importance": 0
     },
     {
-      "id": "research-ch4-fc-kp209",
+      "id": "research-ch4-fc-kp211",
       "chapterId": "research-ch4",
       "question": "分析类目建立原则包括哪些？",
       "answer": "① 互斥性 —— 每个分析单元只能归入一个类目\n② 穷尽性 —— 所有分析单元都能找到归属\n③ 可靠性 —— 不同编码者分类结果一致（信度要求）",
       "importance": 0
     },
     {
-      "id": "research-ch4-fc-kp210",
+      "id": "research-ch4-fc-kp212",
       "chapterId": "research-ch4",
       "question": "基本概念是什么？",
       "answer": "```\n行动研究 = 在实际工作过程中进行研究\n          + 由实际工作者与研究者共同参与\n          + 使研究成果为实际工作者理解、掌握和应用\n          → 解决实际问题，改善社会行为",
       "importance": 0
     },
     {
-      "id": "research-ch4-fc-kp211",
+      "id": "research-ch4-fc-kp213",
       "chapterId": "research-ch4",
       "question": "特点是什么？",
       "answer": "| 特点 | 说明 |\n|------|------|\n| **为行动而研究** | 目的：解决实际问题，改进实践 |\n| **在行动中研究** | 环境：真实工作场景，不是实验室 |\n| **由行动者研究** | 主体：实践工作者（教师等），不是纯研究者 |\n| **对行动的研究** | 对象：自己的实践行为 |",
       "importance": 0
     },
     {
-      "id": "research-ch4-fc-kp212",
+      "id": "research-ch4-fc-kp214",
       "chapterId": "research-ch4",
       "question": "基本环节（螺旋循环）是什么？",
       "answer": "``\n计划 → 行动 → 观察 → 反思 → 修正计划 → 再行动 → ...\n每个循环都包含：计划→行动→观察→反思 四个阶段\n经过多次循环螺旋上升，不断改进实践\n``",
       "importance": 0
     },
     {
-      "id": "research-ch4-fc-kp213",
+      "id": "research-ch4-fc-kp215",
       "chapterId": "research-ch4",
       "question": "对比与实验研究/调查研究对比的各个维度",
       "answer": "| 维度 | 行动研究 | 实验研究 | 调查研究 |\n|------|---------|---------|---------|\n| 目的 | 改进实践 | 验证假设/确定因果 | 了解现状 |\n| 场所 | 真实工作场景 | 控制环境 | 自然场景 |\n| 研究者 | 实践者本人 | 外部研究者 | 外部研究者 |\n| 推广性 | 低（针对具体情境） | 高 | 中 |\n| 控制程度 | 低 | 高 | 无 |\n---",
       "importance": 0
     },
     {
-      "id": "research-ch4-fc-ep214",
+      "id": "research-ch4-fc-ep216",
       "chapterId": "research-ch4",
       "question": "⚠️ 分析类目三原则",
       "answer": "互斥性+穷尽性+可靠性，缺一不可",
@@ -3437,7 +3464,7 @@
       "id": "edutech-ch2-kp1",
       "type": "knowledge-point",
       "title": "二、\"2×3\"模型 ★（核心考点）",
-      "content": "   \n两个方向 × 三个阶段 = 六格矩阵\n两个方向：\n  物化形态（硬件/设备：竹简→幻灯→多媒体计算机→VR）\n  观念形态（软件/理论：口耳相传→程序教学→绩效技术→知识管理）\n三个阶段：传统教育技术 → 视听媒体教育技术 → 信息化教育技术\n   \n    传统（手工）   视听媒体（机电）   信息化（信息技术）  \n                                  ",
+      "content": "   \n两个方向 × 三个阶段 = 六格矩阵\n两个方向：\n  物化形态（硬件/设备：竹简→幻灯→多媒体计算机→VR）\n  观念形态（软件/理论：口耳相传→程序教学→绩效技术→知识管理）\n三个阶段：传统教育技术 → 视听媒体教育技术 → 信息化教育技术\n   \n  ★ 核心对应关系：物化形态 ↔   媒体论   ↔ 视听媒体；观念形态 ↔   过程论   ↔ 系统方法\n    传统（手工）   视听",
       "subjectId": "edutech",
       "chapterId": "edutech-ch2",
       "importance": 1,
@@ -3447,7 +3474,7 @@
       "id": "edutech-ch2-kp3",
       "type": "knowledge-point",
       "title": "3.1 媒体教学技术：直观→视觉→视听→传播",
-      "content": "   \n直观教学（先声） → 视觉教学（发端） → 视听教学（主体） → 视听传播（过渡到过程论/系统论）\n关键节点：\n  1900s 直观教学（实物/标本/模型）\n  1920s 视觉教学（幻灯/照片/图表）\n  1937 霍本《课程的视觉化》：视觉教材分类模式和选用原则\n  1940s 视听教学（加入广播/录音/有声电影）\n  1946 戴尔\"经验之塔\"★：\n       底层最具体，越往上越",
+      "content": "   \n直观教学（先声） → 视觉教学（发端） → 视听教学（主体） → 视听传播（过渡到过程论/系统论）\n关键节点：\n  1900s 直观教学（实物/标本/模型）\n  1920s 视觉教学（幻灯/照片/图表）\n  1937 霍本《课程的视觉化》：视觉教材分类模式和选用原则\n  1940s 视听教学（加入广播/录音/有声电影）\n  1946 戴尔\"经验之塔\"★（五个要点）：\n       a. 底",
       "subjectId": "edutech",
       "chapterId": "edutech-ch2",
       "importance": 0,
@@ -3496,6 +3523,16 @@
     {
       "id": "edutech-ch2-kp9",
       "type": "knowledge-point",
+      "title": "AECT'94 在中国的三点扩展",
+      "content": "   \n① 强调现代教育理论的指导和  信息技术的支持  \n② 研究对象从\"学习过程与学习资源\"扩展为\"  教与学  的过程和资源\"\n③ 强调教育技术的目的是  优化教与学  \n   ",
+      "subjectId": "edutech",
+      "chapterId": "edutech-ch2",
+      "importance": 0,
+      "tags": []
+    },
+    {
+      "id": "edutech-ch2-kp10",
+      "type": "knowledge-point",
       "title": "四大误区",
       "content": "   \n① 重\"电\"轻\"教\"    ③ 重\"教\"轻\"学\"\n② 重\"硬\"轻\"软\"    ④ 偏科技轻人文\n   \n   ",
       "subjectId": "edutech",
@@ -3504,7 +3541,7 @@
       "tags": []
     },
     {
-      "id": "edutech-ch2-kp11",
+      "id": "edutech-ch2-kp12",
       "type": "knowledge-point",
       "title": "5.1 建构主义反思",
       "content": "   \n问题：极端建构主义否定\"讲课/考试\"等基本教学过程，削弱教师作用\n出路：Blending Learning → 主客观相结合认识论\n   ",
@@ -3514,7 +3551,7 @@
       "tags": []
     },
     {
-      "id": "edutech-ch2-kp12",
+      "id": "edutech-ch2-kp13",
       "type": "knowledge-point",
       "title": "5.2 信息技术与课程整合 ★",
       "content": "   \n目标：创建\"主导—主体相结合的教学结构\"\n实质：彻底改变教学系统四要素（教师/学生/教学内容/教学媒体）\n      的地位、作用和关系\n核心：改变教师与学生的地位、作用和师生关系\n当前问题：\n  ① 缺乏科学系统的理论\n  ② WebQuest风行→误认为是最佳/主要模式\n   \n   ",
@@ -3524,7 +3561,7 @@
       "tags": []
     },
     {
-      "id": "edutech-ch2-kp13",
+      "id": "edutech-ch2-kp14",
       "type": "knowledge-point",
       "title": "六、教育技术发展的四大特点",
       "content": "   \n① 非替代性 —— 表现出累积性（不是新技术取代旧技术）\n② 选择性 —— \"适者生存\"\n③ 对人的作用认识越来越深刻\n④ 需要新观念，通过推进教育整体改革才能快速发展（乔布斯之问）\n   \n   ",
@@ -3534,20 +3571,10 @@
       "tags": []
     },
     {
-      "id": "edutech-ch2-wp26",
-      "type": "weak-point",
-      "title": "\"2×3\"模型完整矩阵默写",
-      "content": "\"2×3\"模型完整矩阵默写",
-      "subjectId": "edutech",
-      "chapterId": "edutech-ch2",
-      "importance": 3,
-      "tags": []
-    },
-    {
       "id": "edutech-ch2-wp27",
       "type": "weak-point",
-      "title": "美国教育技术三条主线的完整历程",
-      "content": "美国教育技术三条主线的完整历程",
+      "title": "\"2×3\"模型完整矩阵默写（含信息化列）",
+      "content": "\"2×3\"模型完整矩阵默写（含信息化列）",
       "subjectId": "edutech",
       "chapterId": "edutech-ch2",
       "importance": 3,
@@ -3555,6 +3582,16 @@
     },
     {
       "id": "edutech-ch2-wp28",
+      "type": "weak-point",
+      "title": "美国教育技术三条主线的完整历程（直观→视觉→视听→传播 / 个别化 / 系统方法）",
+      "content": "美国教育技术三条主线的完整历程（直观→视觉→视听→传播 / 个别化 / 系统方法）",
+      "subjectId": "edutech",
+      "chapterId": "edutech-ch2",
+      "importance": 3,
+      "tags": []
+    },
+    {
+      "id": "edutech-ch2-wp29",
       "type": "weak-point",
       "title": "戴尔经验之塔五个要点",
       "content": "戴尔经验之塔五个要点",
@@ -3564,7 +3601,7 @@
       "tags": []
     },
     {
-      "id": "edutech-ch2-wp29",
+      "id": "edutech-ch2-wp30",
       "type": "weak-point",
       "title": "南国农七论逐一解释",
       "content": "南国农七论逐一解释",
@@ -3574,10 +3611,30 @@
       "tags": []
     },
     {
-      "id": "edutech-ch2-wp30",
+      "id": "edutech-ch2-wp31",
       "type": "weak-point",
-      "title": "信息技术与课程整合的实质表述",
-      "content": "信息技术与课程整合的实质表述",
+      "title": "媒体论↔过程论的对应关系",
+      "content": "媒体论↔过程论的对应关系",
+      "subjectId": "edutech",
+      "chapterId": "edutech-ch2",
+      "importance": 3,
+      "tags": []
+    },
+    {
+      "id": "edutech-ch2-wp32",
+      "type": "weak-point",
+      "title": "信息化教育技术三大特征",
+      "content": "信息化教育技术三大特征",
+      "subjectId": "edutech",
+      "chapterId": "edutech-ch2",
+      "importance": 3,
+      "tags": []
+    },
+    {
+      "id": "edutech-ch2-wp33",
+      "type": "weak-point",
+      "title": "AECT'94在中国的三点扩展",
+      "content": "AECT'94在中国的三点扩展",
       "subjectId": "edutech",
       "chapterId": "edutech-ch2",
       "importance": 3,
@@ -3744,7 +3801,7 @@
       "tags": []
     },
     {
-      "id": "edutech-ch3-wp47",
+      "id": "edutech-ch3-wp50",
       "type": "weak-point",
       "title": "加涅八阶段完整名称",
       "content": "加涅八阶段完整名称",
@@ -3754,7 +3811,7 @@
       "tags": []
     },
     {
-      "id": "edutech-ch3-wp48",
+      "id": "edutech-ch3-wp51",
       "type": "weak-point",
       "title": "维特罗克生成过程7步骤",
       "content": "维特罗克生成过程7步骤",
@@ -3764,7 +3821,7 @@
       "tags": []
     },
     {
-      "id": "edutech-ch3-wp49",
+      "id": "edutech-ch3-wp52",
       "type": "weak-point",
       "title": "认知结构三特性",
       "content": "认知结构三特性",
@@ -3774,7 +3831,7 @@
       "tags": []
     },
     {
-      "id": "edutech-ch3-wp50",
+      "id": "edutech-ch3-wp53",
       "type": "weak-point",
       "title": "三大内驱力解释",
       "content": "三大内驱力解释",
@@ -3784,7 +3841,7 @@
       "tags": []
     },
     {
-      "id": "edutech-ch3-wp51",
+      "id": "edutech-ch3-wp54",
       "type": "weak-point",
       "title": "教学规律完整展开论述",
       "content": "教学规律完整展开论述",
@@ -3904,7 +3961,7 @@
       "tags": []
     },
     {
-      "id": "edutech-ch5-wp63",
+      "id": "edutech-ch5-wp66",
       "type": "weak-point",
       "title": "四种设计观演变",
       "content": "四种设计观演变",
@@ -3914,7 +3971,7 @@
       "tags": []
     },
     {
-      "id": "edutech-ch5-wp64",
+      "id": "edutech-ch5-wp67",
       "type": "weak-point",
       "title": "梅瑞尔CDT/ID2/ITT对比",
       "content": "梅瑞尔CDT/ID2/ITT对比",
@@ -3924,7 +3981,7 @@
       "tags": []
     },
     {
-      "id": "edutech-ch5-wp65",
+      "id": "edutech-ch5-wp68",
       "type": "weak-point",
       "title": "教学处方理论完整阐述",
       "content": "教学处方理论完整阐述",
@@ -3934,7 +3991,7 @@
       "tags": []
     },
     {
-      "id": "edutech-ch5-wp66",
+      "id": "edutech-ch5-wp69",
       "type": "weak-point",
       "title": "活动理论六要素",
       "content": "活动理论六要素",
@@ -3944,7 +4001,7 @@
       "tags": []
     },
     {
-      "id": "edutech-ch5-wp67",
+      "id": "edutech-ch5-wp70",
       "type": "weak-point",
       "title": "AID五种工具各自特征",
       "content": "AID五种工具各自特征",
@@ -4104,7 +4161,7 @@
       "tags": []
     },
     {
-      "id": "edutech-ch6-wp83",
+      "id": "edutech-ch6-wp86",
       "type": "weak-point",
       "title": "绩效技术的含义和特征完整表述",
       "content": "绩效技术的含义和特征完整表述",
@@ -4114,7 +4171,7 @@
       "tags": []
     },
     {
-      "id": "edutech-ch6-wp84",
+      "id": "edutech-ch6-wp87",
       "type": "weak-point",
       "title": "开发五阶段详细展开",
       "content": "开发五阶段详细展开",
@@ -4124,7 +4181,7 @@
       "tags": []
     },
     {
-      "id": "edutech-ch6-wp85",
+      "id": "edutech-ch6-wp88",
       "type": "weak-point",
       "title": "知识管理对网络学习的四个作用",
       "content": "知识管理对网络学习的四个作用",
@@ -4134,7 +4191,7 @@
       "tags": []
     },
     {
-      "id": "edutech-ch6-wp86",
+      "id": "edutech-ch6-wp89",
       "type": "weak-point",
       "title": "教育信息化的五个途径",
       "content": "教育信息化的五个途径",
@@ -4144,7 +4201,7 @@
       "tags": []
     },
     {
-      "id": "edutech-ch6-wp87",
+      "id": "edutech-ch6-wp90",
       "type": "weak-point",
       "title": "信息技术与课程整合的五个实现途径",
       "content": "信息技术与课程整合的五个实现途径",
@@ -4244,7 +4301,7 @@
       "tags": []
     },
     {
-      "id": "isdesign-ch1-wp97",
+      "id": "isdesign-ch1-wp100",
       "type": "weak-point",
       "title": "梅瑞尔 CDT/ID2/ITT/ET 各自含义",
       "content": "梅瑞尔 CDT/ID2/ITT/ET 各自含义",
@@ -4254,7 +4311,7 @@
       "tags": []
     },
     {
-      "id": "isdesign-ch1-wp98",
+      "id": "isdesign-ch1-wp101",
       "type": "weak-point",
       "title": "肯普模型与迪克-凯瑞模型的区别（哪个是非线性的？）",
       "content": "肯普模型与迪克-凯瑞模型的区别（哪个是非线性的？）",
@@ -4264,7 +4321,7 @@
       "tags": []
     },
     {
-      "id": "isdesign-ch1-wp99",
+      "id": "isdesign-ch1-wp102",
       "type": "weak-point",
       "title": "系统分析模式10步骤完整说出",
       "content": "系统分析模式10步骤完整说出",
@@ -4274,7 +4331,7 @@
       "tags": []
     },
     {
-      "id": "isdesign-ch1-wp100",
+      "id": "isdesign-ch1-wp103",
       "type": "weak-point",
       "title": "四大理论基础每一项的具体含义",
       "content": "四大理论基础每一项的具体含义",
@@ -4284,7 +4341,7 @@
       "tags": []
     },
     {
-      "id": "isdesign-ch1-wp101",
+      "id": "isdesign-ch1-wp104",
       "type": "weak-point",
       "title": "教学设计三个层次的区分条件",
       "content": "教学设计三个层次的区分条件",
@@ -4424,7 +4481,7 @@
       "tags": []
     },
     {
-      "id": "isdesign-ch2-wp115",
+      "id": "isdesign-ch2-wp118",
       "type": "weak-point",
       "title": "六种内容分析方法的适用场景区分",
       "content": "六种内容分析方法的适用场景区分",
@@ -4434,7 +4491,7 @@
       "tags": []
     },
     {
-      "id": "isdesign-ch2-wp116",
+      "id": "isdesign-ch2-wp119",
       "type": "weak-point",
       "title": "布鲁姆+克拉斯沃尔+辛普森三人各负责哪个领域",
       "content": "布鲁姆+克拉斯沃尔+辛普森三人各负责哪个领域",
@@ -4444,7 +4501,7 @@
       "tags": []
     },
     {
-      "id": "isdesign-ch2-wp117",
+      "id": "isdesign-ch2-wp120",
       "type": "weak-point",
       "title": "五要素法SVOAC各自对应什么",
       "content": "五要素法SVOAC各自对应什么",
@@ -4454,7 +4511,7 @@
       "tags": []
     },
     {
-      "id": "isdesign-ch2-wp118",
+      "id": "isdesign-ch2-wp121",
       "type": "weak-point",
       "title": "内外结合法具体怎么写",
       "content": "内外结合法具体怎么写",
@@ -4464,7 +4521,7 @@
       "tags": []
     },
     {
-      "id": "isdesign-ch2-wp119",
+      "id": "isdesign-ch2-wp122",
       "type": "weak-point",
       "title": "三种内容组织方式各自对应的理论提出者",
       "content": "三种内容组织方式各自对应的理论提出者",
@@ -4584,7 +4641,7 @@
       "tags": []
     },
     {
-      "id": "isdesign-ch3-wp131",
+      "id": "isdesign-ch3-wp134",
       "type": "weak-point",
       "title": "抛锚式五步骤完整复述",
       "content": "抛锚式五步骤完整复述",
@@ -4594,7 +4651,7 @@
       "tags": []
     },
     {
-      "id": "isdesign-ch3-wp132",
+      "id": "isdesign-ch3-wp135",
       "type": "weak-point",
       "title": "支架式五步骤完整复述",
       "content": "支架式五步骤完整复述",
@@ -4604,7 +4661,7 @@
       "tags": []
     },
     {
-      "id": "isdesign-ch3-wp133",
+      "id": "isdesign-ch3-wp136",
       "type": "weak-point",
       "title": "细化理论\"一二四\"展开论述",
       "content": "细化理论\"一二四\"展开论述",
@@ -4614,7 +4671,7 @@
       "tags": []
     },
     {
-      "id": "isdesign-ch3-wp134",
+      "id": "isdesign-ch3-wp137",
       "type": "weak-point",
       "title": "三种先行组织者设计策略各对应什么类型",
       "content": "三种先行组织者设计策略各对应什么类型",
@@ -4624,7 +4681,7 @@
       "tags": []
     },
     {
-      "id": "isdesign-ch3-wp135",
+      "id": "isdesign-ch3-wp138",
       "type": "weak-point",
       "title": "生成型与替代型的优缺点对比",
       "content": "生成型与替代型的优缺点对比",
@@ -4734,7 +4791,7 @@
       "tags": []
     },
     {
-      "id": "isdesign-ch4-wp146",
+      "id": "isdesign-ch4-wp149",
       "type": "weak-point",
       "title": "ACTIONS七要素逐一展开解释",
       "content": "ACTIONS七要素逐一展开解释",
@@ -4744,7 +4801,7 @@
       "tags": []
     },
     {
-      "id": "isdesign-ch4-wp147",
+      "id": "isdesign-ch4-wp150",
       "type": "weak-point",
       "title": "信息化学习环境四要素完整名称",
       "content": "信息化学习环境四要素完整名称",
@@ -4754,7 +4811,7 @@
       "tags": []
     },
     {
-      "id": "isdesign-ch4-wp148",
+      "id": "isdesign-ch4-wp151",
       "type": "weak-point",
       "title": "七大选择原则与对应理论",
       "content": "七大选择原则与对应理论",
@@ -4764,7 +4821,7 @@
       "tags": []
     },
     {
-      "id": "isdesign-ch4-wp149",
+      "id": "isdesign-ch4-wp152",
       "type": "weak-point",
       "title": "多媒体 vs 网络化学习环境的区别",
       "content": "多媒体 vs 网络化学习环境的区别",
@@ -4774,7 +4831,7 @@
       "tags": []
     },
     {
-      "id": "isdesign-ch4-wp150",
+      "id": "isdesign-ch4-wp153",
       "type": "weak-point",
       "title": "戴尔经验之塔的层次结构",
       "content": "戴尔经验之塔的层次结构",
@@ -4914,7 +4971,7 @@
       "tags": []
     },
     {
-      "id": "isdesign-ch5-wp164",
+      "id": "isdesign-ch5-wp167",
       "type": "weak-point",
       "title": "三种评价类型的时间和目的完整区分",
       "content": "三种评价类型的时间和目的完整区分",
@@ -4924,7 +4981,7 @@
       "tags": []
     },
     {
-      "id": "isdesign-ch5-wp165",
+      "id": "isdesign-ch5-wp168",
       "type": "weak-point",
       "title": "量规设计五步骤和实施七环节完整复述",
       "content": "量规设计五步骤和实施七环节完整复述",
@@ -4934,7 +4991,7 @@
       "tags": []
     },
     {
-      "id": "isdesign-ch5-wp166",
+      "id": "isdesign-ch5-wp169",
       "type": "weak-point",
       "title": "学档评价五个优点",
       "content": "学档评价五个优点",
@@ -4944,7 +5001,7 @@
       "tags": []
     },
     {
-      "id": "isdesign-ch5-wp167",
+      "id": "isdesign-ch5-wp170",
       "type": "weak-point",
       "title": "电子学档五模块名称",
       "content": "电子学档五模块名称",
@@ -4954,7 +5011,7 @@
       "tags": []
     },
     {
-      "id": "isdesign-ch5-wp168",
+      "id": "isdesign-ch5-wp171",
       "type": "weak-point",
       "title": "四个发展阶段的特征与问题",
       "content": "四个发展阶段的特征与问题",
@@ -5054,7 +5111,7 @@
       "tags": []
     },
     {
-      "id": "isdesign-ch6-wp178",
+      "id": "isdesign-ch6-wp181",
       "type": "weak-point",
       "title": "WebQuest七要素完整写出",
       "content": "WebQuest七要素完整写出",
@@ -5064,7 +5121,7 @@
       "tags": []
     },
     {
-      "id": "isdesign-ch6-wp179",
+      "id": "isdesign-ch6-wp182",
       "type": "weak-point",
       "title": "\"英特尔未来教育\"核心内容与三条主线",
       "content": "\"英特尔未来教育\"核心内容与三条主线",
@@ -5074,7 +5131,7 @@
       "tags": []
     },
     {
-      "id": "isdesign-ch6-wp180",
+      "id": "isdesign-ch6-wp183",
       "type": "weak-point",
       "title": "四种基本原则完整展开",
       "content": "四种基本原则完整展开",
@@ -5084,7 +5141,7 @@
       "tags": []
     },
     {
-      "id": "isdesign-ch6-wp181",
+      "id": "isdesign-ch6-wp184",
       "type": "weak-point",
       "title": "三种自主学习方式的区别",
       "content": "三种自主学习方式的区别",
@@ -5094,7 +5151,7 @@
       "tags": []
     },
     {
-      "id": "isdesign-ch6-wp182",
+      "id": "isdesign-ch6-wp185",
       "type": "weak-point",
       "title": "学习情境创设的四种方法",
       "content": "学习情境创设的四种方法",
@@ -5194,7 +5251,7 @@
       "tags": []
     },
     {
-      "id": "research-ch1-wp192",
+      "id": "research-ch1-wp195",
       "type": "weak-point",
       "title": "三种真实观展开论述",
       "content": "三种真实观展开论述",
@@ -5204,7 +5261,7 @@
       "tags": []
     },
     {
-      "id": "research-ch1-wp193",
+      "id": "research-ch1-wp196",
       "type": "weak-point",
       "title": "四组辩证关系完整复述",
       "content": "四组辩证关系完整复述",
@@ -5214,7 +5271,7 @@
       "tags": []
     },
     {
-      "id": "research-ch1-wp194",
+      "id": "research-ch1-wp197",
       "type": "weak-point",
       "title": "研究内容两大领域的具体条目",
       "content": "研究内容两大领域的具体条目",
@@ -5224,7 +5281,7 @@
       "tags": []
     },
     {
-      "id": "research-ch1-wp195",
+      "id": "research-ch1-wp198",
       "type": "weak-point",
       "title": "检索工具中英文全称对照",
       "content": "检索工具中英文全称对照",
@@ -5234,7 +5291,7 @@
       "tags": []
     },
     {
-      "id": "research-ch1-wp196",
+      "id": "research-ch1-wp199",
       "type": "weak-point",
       "title": "文献三级分类举例",
       "content": "文献三级分类举例",
@@ -5354,7 +5411,7 @@
       "tags": []
     },
     {
-      "id": "research-ch2-wp208",
+      "id": "research-ch2-wp211",
       "type": "weak-point",
       "title": "四种假设陈述方式的形式完整写出",
       "content": "四种假设陈述方式的形式完整写出",
@@ -5364,7 +5421,7 @@
       "tags": []
     },
     {
-      "id": "research-ch2-wp209",
+      "id": "research-ch2-wp212",
       "type": "weak-point",
       "title": "概念化与操作化的过程完整论述",
       "content": "概念化与操作化的过程完整论述",
@@ -5374,7 +5431,7 @@
       "tags": []
     },
     {
-      "id": "research-ch2-wp210",
+      "id": "research-ch2-wp213",
       "type": "weak-point",
       "title": "四种抽样方法优缺点对比",
       "content": "四种抽样方法优缺点对比",
@@ -5384,7 +5441,7 @@
       "tags": []
     },
     {
-      "id": "research-ch2-wp211",
+      "id": "research-ch2-wp214",
       "type": "weak-point",
       "title": "研究方案10要素完整列出",
       "content": "研究方案10要素完整列出",
@@ -5394,7 +5451,7 @@
       "tags": []
     },
     {
-      "id": "research-ch2-wp212",
+      "id": "research-ch2-wp215",
       "type": "weak-point",
       "title": "四种量尺的数学特征区分",
       "content": "四种量尺的数学特征区分",
@@ -5484,7 +5541,7 @@
       "tags": []
     },
     {
-      "id": "research-ch3-wp221",
+      "id": "research-ch3-wp224",
       "type": "weak-point",
       "title": "问卷四部分结构每部分内容完整复述",
       "content": "问卷四部分结构每部分内容完整复述",
@@ -5494,7 +5551,7 @@
       "tags": []
     },
     {
-      "id": "research-ch3-wp222",
+      "id": "research-ch3-wp225",
       "type": "weak-point",
       "title": "四种问题类型各自含义",
       "content": "四种问题类型各自含义",
@@ -5504,7 +5561,7 @@
       "tags": []
     },
     {
-      "id": "research-ch3-wp223",
+      "id": "research-ch3-wp226",
       "type": "weak-point",
       "title": "步骤4中调查报告的三种形式",
       "content": "步骤4中调查报告的三种形式",
@@ -5514,7 +5571,7 @@
       "tags": []
     },
     {
-      "id": "research-ch3-wp224",
+      "id": "research-ch3-wp227",
       "type": "weak-point",
       "title": "访谈法具体类型与技巧",
       "content": "访谈法具体类型与技巧",
@@ -5524,7 +5581,7 @@
       "tags": []
     },
     {
-      "id": "research-ch3-wp225",
+      "id": "research-ch3-wp228",
       "type": "weak-point",
       "title": "调查方案基本要素（7要素）",
       "content": "调查方案基本要素（7要素）",
@@ -5644,7 +5701,7 @@
       "tags": []
     },
     {
-      "id": "research-ch4-wp237",
+      "id": "research-ch4-wp240",
       "type": "weak-point",
       "title": "四种实验设计的完整描述与优缺点",
       "content": "四种实验设计的完整描述与优缺点",
@@ -5654,7 +5711,7 @@
       "tags": []
     },
     {
-      "id": "research-ch4-wp238",
+      "id": "research-ch4-wp241",
       "type": "weak-point",
       "title": "内容分析法的完整步骤",
       "content": "内容分析法的完整步骤",
@@ -5664,7 +5721,7 @@
       "tags": []
     },
     {
-      "id": "research-ch4-wp239",
+      "id": "research-ch4-wp242",
       "type": "weak-point",
       "title": "行动研究四特征：\"为/在/由/对\"",
       "content": "行动研究四特征：\"为/在/由/对\"",
@@ -5674,7 +5731,7 @@
       "tags": []
     },
     {
-      "id": "research-ch4-wp240",
+      "id": "research-ch4-wp243",
       "type": "weak-point",
       "title": "三种研究方法的综合对比",
       "content": "三种研究方法的综合对比",
@@ -5684,7 +5741,7 @@
       "tags": []
     },
     {
-      "id": "research-ch4-wp241",
+      "id": "research-ch4-wp244",
       "type": "weak-point",
       "title": "拉丁方设计的具体实施方式",
       "content": "拉丁方设计的具体实施方式",

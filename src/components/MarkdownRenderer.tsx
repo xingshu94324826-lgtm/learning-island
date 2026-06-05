@@ -16,10 +16,11 @@ function parseTable(lines: string[]): { columns: { title: string; dataIndex: str
   const sepMatch = lines[1].match(/^\|[\s\-:|]+\|$/);
   if (!headerMatch || !sepMatch) return null;
 
-  const headers = headerMatch[1].split('|').map(h => h.trim()).filter(Boolean);
-  if (headers.length === 0) return null;
+  const allCells = headerMatch[1].split('|').map(h => h.trim());
+  // First cell may be empty (row-header column) — keep it so column count matches data cells
+  if (allCells.every(c => !c)) return null;
 
-  const columns = headers.map((h, i) => ({
+  const columns = allCells.map((h, i) => ({
     title: stripMarkdown(h),
     dataIndex: `col${i}`,
     render: (value: unknown) => (
