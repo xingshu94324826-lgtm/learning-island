@@ -47,7 +47,23 @@ export default function KnowledgeCard({ kp, defaultExpanded = false }: Knowledge
           </span>
         }
         answer={
-          <MarkdownRenderer content={kp.content} />
+          <div>
+            <MarkdownRenderer content={kp.content} />
+            {kp.tags.length > 0 && (
+              <div style={{ display: 'flex', gap: 4, marginTop: 10, flexWrap: 'wrap', alignItems: 'center' }}>
+                <span style={{ fontSize: 9, color: 'var(--animal-text-color-secondary, #9f927d)' }}>🔗</span>
+                {kp.tags.map(tag => (
+                  <span key={tag} style={{
+                    padding: '2px 8px', borderRadius: 8, fontSize: 10, fontWeight: 600,
+                    background: 'var(--animal-border-color-light, #e8e2d6)',
+                    color: 'var(--animal-text-color-secondary, #9f927d)',
+                  }}>
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            )}
+          </div>
         }
         defaultExpanded={defaultExpanded}
       />

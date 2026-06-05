@@ -137,6 +137,70 @@ function extractKnowledgePoints(chapterId: string, lines: string[]) {
   return kps.filter(kp => kp.content.length > 0);
 }
 
+// ── Auto-tagging ──
+
+// Keyword → canonical tag name
+const TAG_KEYWORDS: [string[], string][] = [
+  [['建构主义', '建构'], '建构主义'],
+  [['系统论', '系统方法', '系统科学', '系统观'], '系统论'],
+  [['布卢姆', '布鲁姆'], '布卢姆'],
+  [['加涅'], '加涅'],
+  [['形成性评价'], '形成性评价'],
+  [['绩效技术', '绩效'], '绩效技术'],
+  [['先行组织者'], '先行组织者'],
+  [['信息技术与课程整合', '课程整合', '信息技术与课程深层次整合'], '信息技术与课程整合'],
+  [['主导-主体', '主导—主体', '学教并重'], '主导-主体'],
+  [['AECT', '94定义', '05定义'], 'AECT定义'],
+  [['梅瑞尔', 'CDT', '成分显示理论'], '梅瑞尔'],
+  [['戴尔', '经验之塔'], '戴尔经验之塔'],
+  [['程序教学'], '程序教学'],
+  [['维果斯基', '最近发展区'], '维果斯基'],
+  [['ADDIE'], 'ADDIE'],
+  [['ARCS', '动机模型', '凯勒'], 'ARCS'],
+  [['斯金纳'], '斯金纳'],
+  [['奥苏贝尔'], '奥苏贝尔'],
+  [['布鲁纳'], '布鲁纳'],
+  [['学习风格'], '学习风格'],
+  [['量规', '评价量规'], '量规'],
+  [['教学媒体', '媒体特性', '媒体选择'], '教学媒体'],
+  [['教学设计', '教学系统设计'], '教学设计'],
+  [['行为主义'], '行为主义'],
+  [['认知主义', '认知学习理论'], '认知主义'],
+  [['传播理论', '7W', '布雷多克', '四律'], '传播理论'],
+  [['教学处方理论', '郑永柏'], '教学处方理论'],
+  [['活动理论', 'Activity Theory'], '活动理论'],
+  [['知识管理'], '知识管理'],
+  [['学习分析'], '学习分析'],
+  [['教育信息化', '信息化教育'], '教育信息化'],
+  [['MOOC', '在线课程', '大规模'], 'MOOC'],
+  [['翻转课堂'], '翻转课堂'],
+  [['深度学习'], '深度学习'],
+  [['人工智能', 'AI', '智能'], '人工智能'],
+  [['核心素养'], '核心素养'],
+  [['混合式学习', 'Blending Learning', 'Blended'], '混合式学习'],
+  [['信息素养'], '信息素养'],
+  [['学习环境'], '学习环境'],
+  [['学习资源', '教学资源'], '学习资源'],
+];
+
+function autoTag(text: string): string[] {
+  const tags: string[] = [];
+  const lower = text.toLowerCase();
+  for (const [keywords, tag] of TAG_KEYWORDS) {
+    if (keywords.some(kw => lower.includes(kw.toLowerCase()))) {
+      tags.push(tag);
+    }
+  }
+  return tags;
+}
+
+function tagKnowledgePoints(kps: { id: string; title: string; content: string; tags: string[] }[]) {
+  for (const kp of kps) {
+    const combined = kp.title + ' ' + kp.content;
+    kp.tags = autoTag(combined);
+  }
+}
+
 function extractErrorProne(lines: string[]): string[] {
   const r: string[] = [];
   let on = false;
@@ -182,6 +246,7 @@ function parseMarkdown(filePath: string) {
 
   const chId = `${sub.id}-ch${order}`;
   const kps = extractKnowledgePoints(chId, lines);
+  tagKnowledgePoints(kps);
   const eps = extractErrorProne(lines);
   const wps = extractWeakPoints(lines);
 

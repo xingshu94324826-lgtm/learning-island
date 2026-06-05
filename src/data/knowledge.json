@@ -20,7 +20,10 @@
               "importance": 5,
               "category": "definition",
               "color": "red",
-              "tags": []
+              "tags": [
+                "AECT定义",
+                "学习资源"
+              ]
             },
             {
               "id": "edutech-ch1-kp2",
@@ -29,7 +32,10 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "形成性评价",
+                "教学设计"
+              ]
             },
             {
               "id": "edutech-ch1-kp3",
@@ -38,7 +44,11 @@
               "importance": 0,
               "category": "comparison",
               "color": "green",
-              "tags": []
+              "tags": [
+                "绩效技术",
+                "AECT定义",
+                "学习资源"
+              ]
             },
             {
               "id": "edutech-ch1-kp4",
@@ -56,7 +66,9 @@
               "importance": 1,
               "category": "theory",
               "color": "green",
-              "tags": []
+              "tags": [
+                "系统论"
+              ]
             },
             {
               "id": "edutech-ch1-kp7",
@@ -65,7 +77,9 @@
               "importance": 0,
               "category": "theory",
               "color": "green",
-              "tags": []
+              "tags": [
+                "传播理论"
+              ]
             },
             {
               "id": "edutech-ch1-kp8",
@@ -74,7 +88,11 @@
               "importance": 0,
               "category": "comparison",
               "color": "green",
-              "tags": []
+              "tags": [
+                "建构主义",
+                "行为主义",
+                "认知主义"
+              ]
             },
             {
               "id": "edutech-ch1-kp9",
@@ -83,7 +101,16 @@
               "importance": 0,
               "category": "theory",
               "color": "green",
-              "tags": []
+              "tags": [
+                "布卢姆",
+                "加涅",
+                "形成性评价",
+                "先行组织者",
+                "程序教学",
+                "斯金纳",
+                "奥苏贝尔",
+                "布鲁纳"
+              ]
             },
             {
               "id": "edutech-ch1-kp10",
@@ -127,7 +154,18 @@
               "importance": 1,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "系统论",
+                "绩效技术",
+                "先行组织者",
+                "梅瑞尔",
+                "戴尔经验之塔",
+                "程序教学",
+                "教学设计",
+                "知识管理",
+                "教育信息化",
+                "人工智能"
+              ]
             },
             {
               "id": "edutech-ch2-kp3",
@@ -136,7 +174,11 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "系统论",
+                "戴尔经验之塔",
+                "传播理论"
+              ]
             },
             {
               "id": "edutech-ch2-kp4",
@@ -145,7 +187,11 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "程序教学",
+                "斯金纳",
+                "人工智能"
+              ]
             },
             {
               "id": "edutech-ch2-kp5",
@@ -154,7 +200,11 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "系统论",
+                "加涅",
+                "程序教学"
+              ]
             },
             {
               "id": "edutech-ch2-kp7",
@@ -172,7 +222,9 @@
               "importance": 0,
               "category": "theory",
               "color": "green",
-              "tags": []
+              "tags": [
+                "教学媒体"
+              ]
             },
             {
               "id": "edutech-ch2-kp9",
@@ -181,7 +233,10 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "AECT定义",
+                "学习资源"
+              ]
             },
             {
               "id": "edutech-ch2-kp10",
@@ -199,7 +254,10 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "建构主义",
+                "混合式学习"
+              ]
             },
             {
               "id": "edutech-ch2-kp13",
@@ -208,7 +266,11 @@
               "importance": 1,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "信息技术与课程整合",
+                "主导-主体",
+                "教学媒体"
+              ]
             },
             {
               "id": "edutech-ch2-kp14",
@@ -293,7 +355,10 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "教学媒体",
+                "教学设计"
+              ]
             },
             {
               "id": "edutech-ch3-kp8",
@@ -311,7 +376,9 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "布卢姆"
+              ]
             },
             {
               "id": "edutech-ch3-kp11",
@@ -320,7 +387,9 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "加涅"
+              ]
             },
             {
               "id": "edutech-ch3-kp12",
@@ -329,7 +398,10 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "布卢姆",
+                "加涅"
+              ]
             },
             {
               "id": "edutech-ch3-kp13",
@@ -338,7 +410,9 @@
               "importance": 1,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "加涅"
+              ]
             },
             {
               "id": "edutech-ch3-kp14",
@@ -347,7 +421,9 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "建构主义"
+              ]
             },
             {
               "id": "edutech-ch3-kp15",
@@ -356,7 +432,10 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "奥苏贝尔",
+                "学习风格"
+              ]
             },
             {
               "id": "edutech-ch3-kp17",
@@ -383,7 +462,11 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "信息技术与课程整合",
+                "主导-主体",
+                "教学媒体"
+              ]
             }
           ],
           "errorProne": [
@@ -418,7 +501,12 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "系统论",
+                "形成性评价",
+                "教学媒体",
+                "教学设计"
+              ]
             },
             {
               "id": "edutech-ch5-kp2",
@@ -427,7 +515,15 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "建构主义",
+                "系统论",
+                "程序教学",
+                "教学设计",
+                "行为主义",
+                "认知主义",
+                "传播理论"
+              ]
             },
             {
               "id": "edutech-ch5-kp4",
@@ -436,7 +532,9 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "加涅"
+              ]
             },
             {
               "id": "edutech-ch5-kp5",
@@ -445,7 +543,10 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "梅瑞尔",
+                "教学设计"
+              ]
             },
             {
               "id": "edutech-ch5-kp6",
@@ -454,7 +555,9 @@
               "importance": 0,
               "category": "theory",
               "color": "green",
-              "tags": []
+              "tags": [
+                "教学处方理论"
+              ]
             },
             {
               "id": "edutech-ch5-kp7",
@@ -463,7 +566,10 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "加涅",
+                "人工智能"
+              ]
             },
             {
               "id": "edutech-ch5-kp8",
@@ -472,7 +578,10 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "教学设计",
+                "学习资源"
+              ]
             },
             {
               "id": "edutech-ch5-kp9",
@@ -481,7 +590,11 @@
               "importance": 0,
               "category": "theory",
               "color": "green",
-              "tags": []
+              "tags": [
+                "教学设计",
+                "活动理论",
+                "学习环境"
+              ]
             },
             {
               "id": "edutech-ch5-kp10",
@@ -490,7 +603,11 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "绩效技术",
+                "教学设计",
+                "人工智能"
+              ]
             },
             {
               "id": "edutech-ch5-kp11",
@@ -499,7 +616,11 @@
               "importance": 0,
               "category": "theory",
               "color": "green",
-              "tags": []
+              "tags": [
+                "先行组织者",
+                "主导-主体",
+                "教学设计"
+              ]
             }
           ],
           "errorProne": [
@@ -534,7 +655,9 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "形成性评价"
+              ]
             },
             {
               "id": "edutech-ch6-kp3",
@@ -552,7 +675,10 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "人工智能",
+                "学习环境"
+              ]
             },
             {
               "id": "edutech-ch6-kp6",
@@ -561,7 +687,10 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "绩效技术",
+                "学习资源"
+              ]
             },
             {
               "id": "edutech-ch6-kp7",
@@ -570,7 +699,10 @@
               "importance": 1,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "系统论",
+                "绩效技术"
+              ]
             },
             {
               "id": "edutech-ch6-kp8",
@@ -588,7 +720,9 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "知识管理"
+              ]
             },
             {
               "id": "edutech-ch6-kp11",
@@ -597,7 +731,11 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "建构主义",
+                "知识管理",
+                "学习资源"
+              ]
             },
             {
               "id": "edutech-ch6-kp13",
@@ -606,7 +744,10 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "形成性评价",
+                "学习资源"
+              ]
             },
             {
               "id": "edutech-ch6-kp14",
@@ -615,7 +756,9 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "量规"
+              ]
             },
             {
               "id": "edutech-ch6-kp15",
@@ -633,7 +776,9 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "信息素养"
+              ]
             },
             {
               "id": "edutech-ch6-kp18",
@@ -642,7 +787,12 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "信息技术与课程整合",
+                "教育信息化",
+                "信息素养",
+                "学习资源"
+              ]
             },
             {
               "id": "edutech-ch6-kp19",
@@ -651,7 +801,13 @@
               "importance": 1,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "建构主义",
+                "信息技术与课程整合",
+                "主导-主体",
+                "教学设计",
+                "学习资源"
+              ]
             }
           ],
           "errorProne": [
@@ -693,7 +849,16 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "布卢姆",
+                "加涅",
+                "形成性评价",
+                "梅瑞尔",
+                "程序教学",
+                "ARCS",
+                "斯金纳",
+                "教学设计"
+              ]
             },
             {
               "id": "isdesign-ch1-kp2",
@@ -702,7 +867,12 @@
               "importance": 0,
               "category": "definition",
               "color": "green",
-              "tags": []
+              "tags": [
+                "系统论",
+                "加涅",
+                "梅瑞尔",
+                "教学设计"
+              ]
             },
             {
               "id": "isdesign-ch1-kp3",
@@ -711,7 +881,10 @@
               "importance": 0,
               "category": "theory",
               "color": "green",
-              "tags": []
+              "tags": [
+                "教学设计",
+                "传播理论"
+              ]
             },
             {
               "id": "isdesign-ch1-kp4",
@@ -720,7 +893,9 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "教学设计"
+              ]
             },
             {
               "id": "isdesign-ch1-kp6",
@@ -729,7 +904,9 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "形成性评价"
+              ]
             },
             {
               "id": "isdesign-ch1-kp7",
@@ -738,7 +915,9 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "学习资源"
+              ]
             },
             {
               "id": "isdesign-ch1-kp8",
@@ -747,7 +926,9 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "形成性评价"
+              ]
             },
             {
               "id": "isdesign-ch1-kp9",
@@ -756,7 +937,11 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "学习风格",
+                "教学媒体",
+                "教学设计"
+              ]
             }
           ],
           "errorProne": [
@@ -810,7 +995,9 @@
               "importance": 0,
               "category": "theory",
               "color": "green",
-              "tags": []
+              "tags": [
+                "教学设计"
+              ]
             },
             {
               "id": "isdesign-ch2-kp6",
@@ -828,7 +1015,9 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "加涅"
+              ]
             },
             {
               "id": "isdesign-ch2-kp8",
@@ -837,7 +1026,12 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "加涅",
+                "先行组织者",
+                "奥苏贝尔",
+                "布鲁纳"
+              ]
             },
             {
               "id": "isdesign-ch2-kp10",
@@ -855,7 +1049,9 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "学习风格"
+              ]
             },
             {
               "id": "isdesign-ch2-kp12",
@@ -864,7 +1060,9 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "学习风格"
+              ]
             },
             {
               "id": "isdesign-ch2-kp14",
@@ -873,7 +1071,9 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "布卢姆"
+              ]
             },
             {
               "id": "isdesign-ch2-kp15",
@@ -882,7 +1082,9 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "加涅"
+              ]
             },
             {
               "id": "isdesign-ch2-kp16",
@@ -891,7 +1093,9 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "加涅"
+              ]
             }
           ],
           "errorProne": [
@@ -936,7 +1140,11 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "建构主义",
+                "斯金纳",
+                "行为主义"
+              ]
             },
             {
               "id": "isdesign-ch3-kp3",
@@ -945,7 +1153,9 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "建构主义"
+              ]
             },
             {
               "id": "isdesign-ch3-kp4",
@@ -954,7 +1164,10 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "建构主义",
+                "维果斯基"
+              ]
             },
             {
               "id": "isdesign-ch3-kp6",
@@ -963,7 +1176,9 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "奥苏贝尔"
+              ]
             },
             {
               "id": "isdesign-ch3-kp7",
@@ -981,7 +1196,9 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "梅瑞尔"
+              ]
             },
             {
               "id": "isdesign-ch3-kp9",
@@ -1044,7 +1261,9 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "教学媒体"
+              ]
             },
             {
               "id": "isdesign-ch4-kp2",
@@ -1053,7 +1272,9 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "戴尔经验之塔"
+              ]
             },
             {
               "id": "isdesign-ch4-kp3",
@@ -1062,7 +1283,9 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "教学媒体"
+              ]
             },
             {
               "id": "isdesign-ch4-kp4",
@@ -1071,7 +1294,9 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "戴尔经验之塔"
+              ]
             },
             {
               "id": "isdesign-ch4-kp5",
@@ -1080,7 +1305,9 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "教学媒体"
+              ]
             },
             {
               "id": "isdesign-ch4-kp7",
@@ -1089,7 +1316,9 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "学习资源"
+              ]
             },
             {
               "id": "isdesign-ch4-kp8",
@@ -1107,7 +1336,9 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "学习环境"
+              ]
             },
             {
               "id": "isdesign-ch4-kp10",
@@ -1116,7 +1347,9 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "学习环境"
+              ]
             }
           ],
           "errorProne": [
@@ -1160,7 +1393,10 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "建构主义",
+                "形成性评价"
+              ]
             },
             {
               "id": "isdesign-ch5-kp3",
@@ -1169,7 +1405,9 @@
               "importance": 1,
               "category": "comparison",
               "color": "green",
-              "tags": []
+              "tags": [
+                "形成性评价"
+              ]
             },
             {
               "id": "isdesign-ch5-kp4",
@@ -1187,7 +1425,10 @@
               "importance": 0,
               "category": "definition",
               "color": "green",
-              "tags": []
+              "tags": [
+                "形成性评价",
+                "量规"
+              ]
             },
             {
               "id": "isdesign-ch5-kp7",
@@ -1205,7 +1446,9 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "量规"
+              ]
             },
             {
               "id": "isdesign-ch5-kp9",
@@ -1214,7 +1457,9 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "量规"
+              ]
             },
             {
               "id": "isdesign-ch5-kp11",
@@ -1232,7 +1477,9 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "量规"
+              ]
             },
             {
               "id": "isdesign-ch5-kp13",
@@ -1285,7 +1532,10 @@
               "importance": 0,
               "category": "definition",
               "color": "green",
-              "tags": []
+              "tags": [
+                "建构主义",
+                "教学设计"
+              ]
             },
             {
               "id": "isdesign-ch6-kp3",
@@ -1294,7 +1544,9 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "教学设计"
+              ]
             },
             {
               "id": "isdesign-ch6-kp4",
@@ -1303,7 +1555,12 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "建构主义",
+                "教学设计",
+                "学习环境",
+                "学习资源"
+              ]
             },
             {
               "id": "isdesign-ch6-kp5",
@@ -1312,7 +1569,10 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "建构主义",
+                "教学媒体"
+              ]
             },
             {
               "id": "isdesign-ch6-kp7",
@@ -1321,7 +1581,10 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "量规",
+                "教学设计"
+              ]
             },
             {
               "id": "isdesign-ch6-kp8",
@@ -1330,7 +1593,9 @@
               "importance": 1,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "量规"
+              ]
             },
             {
               "id": "isdesign-ch6-kp9",
@@ -1348,7 +1613,10 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "建构主义",
+                "维果斯基"
+              ]
             }
           ],
           "errorProne": [
@@ -1418,7 +1686,11 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "绩效技术",
+                "教学设计",
+                "学习环境"
+              ]
             },
             {
               "id": "research-ch1-kp5",
@@ -1427,7 +1699,9 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "系统论"
+              ]
             },
             {
               "id": "research-ch1-kp7",
@@ -1543,7 +1817,9 @@
               "importance": 0,
               "category": "method",
               "color": "green",
-              "tags": []
+              "tags": [
+                "教学媒体"
+              ]
             },
             {
               "id": "research-ch2-kp11",
@@ -3333,7 +3609,10 @@
       "subjectId": "edutech",
       "chapterId": "edutech-ch1",
       "importance": 5,
-      "tags": []
+      "tags": [
+        "AECT定义",
+        "学习资源"
+      ]
     },
     {
       "id": "edutech-ch1-kp2",
@@ -3343,7 +3622,10 @@
       "subjectId": "edutech",
       "chapterId": "edutech-ch1",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "形成性评价",
+        "教学设计"
+      ]
     },
     {
       "id": "edutech-ch1-kp3",
@@ -3353,7 +3635,11 @@
       "subjectId": "edutech",
       "chapterId": "edutech-ch1",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "绩效技术",
+        "AECT定义",
+        "学习资源"
+      ]
     },
     {
       "id": "edutech-ch1-kp4",
@@ -3373,7 +3659,9 @@
       "subjectId": "edutech",
       "chapterId": "edutech-ch1",
       "importance": 1,
-      "tags": []
+      "tags": [
+        "系统论"
+      ]
     },
     {
       "id": "edutech-ch1-kp7",
@@ -3383,7 +3671,9 @@
       "subjectId": "edutech",
       "chapterId": "edutech-ch1",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "传播理论"
+      ]
     },
     {
       "id": "edutech-ch1-kp8",
@@ -3393,7 +3683,11 @@
       "subjectId": "edutech",
       "chapterId": "edutech-ch1",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "建构主义",
+        "行为主义",
+        "认知主义"
+      ]
     },
     {
       "id": "edutech-ch1-kp9",
@@ -3403,7 +3697,16 @@
       "subjectId": "edutech",
       "chapterId": "edutech-ch1",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "布卢姆",
+        "加涅",
+        "形成性评价",
+        "先行组织者",
+        "程序教学",
+        "斯金纳",
+        "奥苏贝尔",
+        "布鲁纳"
+      ]
     },
     {
       "id": "edutech-ch1-kp10",
@@ -3483,7 +3786,18 @@
       "subjectId": "edutech",
       "chapterId": "edutech-ch2",
       "importance": 1,
-      "tags": []
+      "tags": [
+        "系统论",
+        "绩效技术",
+        "先行组织者",
+        "梅瑞尔",
+        "戴尔经验之塔",
+        "程序教学",
+        "教学设计",
+        "知识管理",
+        "教育信息化",
+        "人工智能"
+      ]
     },
     {
       "id": "edutech-ch2-kp3",
@@ -3493,7 +3807,11 @@
       "subjectId": "edutech",
       "chapterId": "edutech-ch2",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "系统论",
+        "戴尔经验之塔",
+        "传播理论"
+      ]
     },
     {
       "id": "edutech-ch2-kp4",
@@ -3503,7 +3821,11 @@
       "subjectId": "edutech",
       "chapterId": "edutech-ch2",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "程序教学",
+        "斯金纳",
+        "人工智能"
+      ]
     },
     {
       "id": "edutech-ch2-kp5",
@@ -3513,7 +3835,11 @@
       "subjectId": "edutech",
       "chapterId": "edutech-ch2",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "系统论",
+        "加涅",
+        "程序教学"
+      ]
     },
     {
       "id": "edutech-ch2-kp7",
@@ -3533,7 +3859,9 @@
       "subjectId": "edutech",
       "chapterId": "edutech-ch2",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "教学媒体"
+      ]
     },
     {
       "id": "edutech-ch2-kp9",
@@ -3543,7 +3871,10 @@
       "subjectId": "edutech",
       "chapterId": "edutech-ch2",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "AECT定义",
+        "学习资源"
+      ]
     },
     {
       "id": "edutech-ch2-kp10",
@@ -3563,7 +3894,10 @@
       "subjectId": "edutech",
       "chapterId": "edutech-ch2",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "建构主义",
+        "混合式学习"
+      ]
     },
     {
       "id": "edutech-ch2-kp13",
@@ -3573,7 +3907,11 @@
       "subjectId": "edutech",
       "chapterId": "edutech-ch2",
       "importance": 1,
-      "tags": []
+      "tags": [
+        "信息技术与课程整合",
+        "主导-主体",
+        "教学媒体"
+      ]
     },
     {
       "id": "edutech-ch2-kp14",
@@ -3713,7 +4051,10 @@
       "subjectId": "edutech",
       "chapterId": "edutech-ch3",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "教学媒体",
+        "教学设计"
+      ]
     },
     {
       "id": "edutech-ch3-kp8",
@@ -3733,7 +4074,9 @@
       "subjectId": "edutech",
       "chapterId": "edutech-ch3",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "布卢姆"
+      ]
     },
     {
       "id": "edutech-ch3-kp11",
@@ -3743,7 +4086,9 @@
       "subjectId": "edutech",
       "chapterId": "edutech-ch3",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "加涅"
+      ]
     },
     {
       "id": "edutech-ch3-kp12",
@@ -3753,7 +4098,10 @@
       "subjectId": "edutech",
       "chapterId": "edutech-ch3",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "布卢姆",
+        "加涅"
+      ]
     },
     {
       "id": "edutech-ch3-kp13",
@@ -3763,7 +4111,9 @@
       "subjectId": "edutech",
       "chapterId": "edutech-ch3",
       "importance": 1,
-      "tags": []
+      "tags": [
+        "加涅"
+      ]
     },
     {
       "id": "edutech-ch3-kp14",
@@ -3773,7 +4123,9 @@
       "subjectId": "edutech",
       "chapterId": "edutech-ch3",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "建构主义"
+      ]
     },
     {
       "id": "edutech-ch3-kp15",
@@ -3783,7 +4135,10 @@
       "subjectId": "edutech",
       "chapterId": "edutech-ch3",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "奥苏贝尔",
+        "学习风格"
+      ]
     },
     {
       "id": "edutech-ch3-kp17",
@@ -3813,7 +4168,11 @@
       "subjectId": "edutech",
       "chapterId": "edutech-ch3",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "信息技术与课程整合",
+        "主导-主体",
+        "教学媒体"
+      ]
     },
     {
       "id": "edutech-ch3-wp50",
@@ -3883,7 +4242,12 @@
       "subjectId": "edutech",
       "chapterId": "edutech-ch5",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "系统论",
+        "形成性评价",
+        "教学媒体",
+        "教学设计"
+      ]
     },
     {
       "id": "edutech-ch5-kp2",
@@ -3893,7 +4257,15 @@
       "subjectId": "edutech",
       "chapterId": "edutech-ch5",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "建构主义",
+        "系统论",
+        "程序教学",
+        "教学设计",
+        "行为主义",
+        "认知主义",
+        "传播理论"
+      ]
     },
     {
       "id": "edutech-ch5-kp4",
@@ -3903,7 +4275,9 @@
       "subjectId": "edutech",
       "chapterId": "edutech-ch5",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "加涅"
+      ]
     },
     {
       "id": "edutech-ch5-kp5",
@@ -3913,7 +4287,10 @@
       "subjectId": "edutech",
       "chapterId": "edutech-ch5",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "梅瑞尔",
+        "教学设计"
+      ]
     },
     {
       "id": "edutech-ch5-kp6",
@@ -3923,7 +4300,9 @@
       "subjectId": "edutech",
       "chapterId": "edutech-ch5",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "教学处方理论"
+      ]
     },
     {
       "id": "edutech-ch5-kp7",
@@ -3933,7 +4312,10 @@
       "subjectId": "edutech",
       "chapterId": "edutech-ch5",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "加涅",
+        "人工智能"
+      ]
     },
     {
       "id": "edutech-ch5-kp8",
@@ -3943,7 +4325,10 @@
       "subjectId": "edutech",
       "chapterId": "edutech-ch5",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "教学设计",
+        "学习资源"
+      ]
     },
     {
       "id": "edutech-ch5-kp9",
@@ -3953,7 +4338,11 @@
       "subjectId": "edutech",
       "chapterId": "edutech-ch5",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "教学设计",
+        "活动理论",
+        "学习环境"
+      ]
     },
     {
       "id": "edutech-ch5-kp10",
@@ -3963,7 +4352,11 @@
       "subjectId": "edutech",
       "chapterId": "edutech-ch5",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "绩效技术",
+        "教学设计",
+        "人工智能"
+      ]
     },
     {
       "id": "edutech-ch5-kp11",
@@ -3973,7 +4366,11 @@
       "subjectId": "edutech",
       "chapterId": "edutech-ch5",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "先行组织者",
+        "主导-主体",
+        "教学设计"
+      ]
     },
     {
       "id": "edutech-ch5-wp66",
@@ -4043,7 +4440,9 @@
       "subjectId": "edutech",
       "chapterId": "edutech-ch6",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "形成性评价"
+      ]
     },
     {
       "id": "edutech-ch6-kp3",
@@ -4063,7 +4462,10 @@
       "subjectId": "edutech",
       "chapterId": "edutech-ch6",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "人工智能",
+        "学习环境"
+      ]
     },
     {
       "id": "edutech-ch6-kp6",
@@ -4073,7 +4475,10 @@
       "subjectId": "edutech",
       "chapterId": "edutech-ch6",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "绩效技术",
+        "学习资源"
+      ]
     },
     {
       "id": "edutech-ch6-kp7",
@@ -4083,7 +4488,10 @@
       "subjectId": "edutech",
       "chapterId": "edutech-ch6",
       "importance": 1,
-      "tags": []
+      "tags": [
+        "系统论",
+        "绩效技术"
+      ]
     },
     {
       "id": "edutech-ch6-kp8",
@@ -4103,7 +4511,9 @@
       "subjectId": "edutech",
       "chapterId": "edutech-ch6",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "知识管理"
+      ]
     },
     {
       "id": "edutech-ch6-kp11",
@@ -4113,7 +4523,11 @@
       "subjectId": "edutech",
       "chapterId": "edutech-ch6",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "建构主义",
+        "知识管理",
+        "学习资源"
+      ]
     },
     {
       "id": "edutech-ch6-kp13",
@@ -4123,7 +4537,10 @@
       "subjectId": "edutech",
       "chapterId": "edutech-ch6",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "形成性评价",
+        "学习资源"
+      ]
     },
     {
       "id": "edutech-ch6-kp14",
@@ -4133,7 +4550,9 @@
       "subjectId": "edutech",
       "chapterId": "edutech-ch6",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "量规"
+      ]
     },
     {
       "id": "edutech-ch6-kp15",
@@ -4153,7 +4572,9 @@
       "subjectId": "edutech",
       "chapterId": "edutech-ch6",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "信息素养"
+      ]
     },
     {
       "id": "edutech-ch6-kp18",
@@ -4163,7 +4584,12 @@
       "subjectId": "edutech",
       "chapterId": "edutech-ch6",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "信息技术与课程整合",
+        "教育信息化",
+        "信息素养",
+        "学习资源"
+      ]
     },
     {
       "id": "edutech-ch6-kp19",
@@ -4173,7 +4599,13 @@
       "subjectId": "edutech",
       "chapterId": "edutech-ch6",
       "importance": 1,
-      "tags": []
+      "tags": [
+        "建构主义",
+        "信息技术与课程整合",
+        "主导-主体",
+        "教学设计",
+        "学习资源"
+      ]
     },
     {
       "id": "edutech-ch6-wp86",
@@ -4243,7 +4675,16 @@
       "subjectId": "isdesign",
       "chapterId": "isdesign-ch1",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "布卢姆",
+        "加涅",
+        "形成性评价",
+        "梅瑞尔",
+        "程序教学",
+        "ARCS",
+        "斯金纳",
+        "教学设计"
+      ]
     },
     {
       "id": "isdesign-ch1-kp2",
@@ -4253,7 +4694,12 @@
       "subjectId": "isdesign",
       "chapterId": "isdesign-ch1",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "系统论",
+        "加涅",
+        "梅瑞尔",
+        "教学设计"
+      ]
     },
     {
       "id": "isdesign-ch1-kp3",
@@ -4263,7 +4709,10 @@
       "subjectId": "isdesign",
       "chapterId": "isdesign-ch1",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "教学设计",
+        "传播理论"
+      ]
     },
     {
       "id": "isdesign-ch1-kp4",
@@ -4273,7 +4722,9 @@
       "subjectId": "isdesign",
       "chapterId": "isdesign-ch1",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "教学设计"
+      ]
     },
     {
       "id": "isdesign-ch1-kp6",
@@ -4283,7 +4734,9 @@
       "subjectId": "isdesign",
       "chapterId": "isdesign-ch1",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "形成性评价"
+      ]
     },
     {
       "id": "isdesign-ch1-kp7",
@@ -4293,7 +4746,9 @@
       "subjectId": "isdesign",
       "chapterId": "isdesign-ch1",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "学习资源"
+      ]
     },
     {
       "id": "isdesign-ch1-kp8",
@@ -4303,7 +4758,9 @@
       "subjectId": "isdesign",
       "chapterId": "isdesign-ch1",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "形成性评价"
+      ]
     },
     {
       "id": "isdesign-ch1-kp9",
@@ -4313,7 +4770,11 @@
       "subjectId": "isdesign",
       "chapterId": "isdesign-ch1",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "学习风格",
+        "教学媒体",
+        "教学设计"
+      ]
     },
     {
       "id": "isdesign-ch1-wp100",
@@ -4403,7 +4864,9 @@
       "subjectId": "isdesign",
       "chapterId": "isdesign-ch2",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "教学设计"
+      ]
     },
     {
       "id": "isdesign-ch2-kp6",
@@ -4423,7 +4886,9 @@
       "subjectId": "isdesign",
       "chapterId": "isdesign-ch2",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "加涅"
+      ]
     },
     {
       "id": "isdesign-ch2-kp8",
@@ -4433,7 +4898,12 @@
       "subjectId": "isdesign",
       "chapterId": "isdesign-ch2",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "加涅",
+        "先行组织者",
+        "奥苏贝尔",
+        "布鲁纳"
+      ]
     },
     {
       "id": "isdesign-ch2-kp10",
@@ -4453,7 +4923,9 @@
       "subjectId": "isdesign",
       "chapterId": "isdesign-ch2",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "学习风格"
+      ]
     },
     {
       "id": "isdesign-ch2-kp12",
@@ -4463,7 +4935,9 @@
       "subjectId": "isdesign",
       "chapterId": "isdesign-ch2",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "学习风格"
+      ]
     },
     {
       "id": "isdesign-ch2-kp14",
@@ -4473,7 +4947,9 @@
       "subjectId": "isdesign",
       "chapterId": "isdesign-ch2",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "布卢姆"
+      ]
     },
     {
       "id": "isdesign-ch2-kp15",
@@ -4483,7 +4959,9 @@
       "subjectId": "isdesign",
       "chapterId": "isdesign-ch2",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "加涅"
+      ]
     },
     {
       "id": "isdesign-ch2-kp16",
@@ -4493,7 +4971,9 @@
       "subjectId": "isdesign",
       "chapterId": "isdesign-ch2",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "加涅"
+      ]
     },
     {
       "id": "isdesign-ch2-wp118",
@@ -4573,7 +5053,11 @@
       "subjectId": "isdesign",
       "chapterId": "isdesign-ch3",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "建构主义",
+        "斯金纳",
+        "行为主义"
+      ]
     },
     {
       "id": "isdesign-ch3-kp3",
@@ -4583,7 +5067,9 @@
       "subjectId": "isdesign",
       "chapterId": "isdesign-ch3",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "建构主义"
+      ]
     },
     {
       "id": "isdesign-ch3-kp4",
@@ -4593,7 +5079,10 @@
       "subjectId": "isdesign",
       "chapterId": "isdesign-ch3",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "建构主义",
+        "维果斯基"
+      ]
     },
     {
       "id": "isdesign-ch3-kp6",
@@ -4603,7 +5092,9 @@
       "subjectId": "isdesign",
       "chapterId": "isdesign-ch3",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "奥苏贝尔"
+      ]
     },
     {
       "id": "isdesign-ch3-kp7",
@@ -4623,7 +5114,9 @@
       "subjectId": "isdesign",
       "chapterId": "isdesign-ch3",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "梅瑞尔"
+      ]
     },
     {
       "id": "isdesign-ch3-kp9",
@@ -4723,7 +5216,9 @@
       "subjectId": "isdesign",
       "chapterId": "isdesign-ch4",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "教学媒体"
+      ]
     },
     {
       "id": "isdesign-ch4-kp2",
@@ -4733,7 +5228,9 @@
       "subjectId": "isdesign",
       "chapterId": "isdesign-ch4",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "戴尔经验之塔"
+      ]
     },
     {
       "id": "isdesign-ch4-kp3",
@@ -4743,7 +5240,9 @@
       "subjectId": "isdesign",
       "chapterId": "isdesign-ch4",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "教学媒体"
+      ]
     },
     {
       "id": "isdesign-ch4-kp4",
@@ -4753,7 +5252,9 @@
       "subjectId": "isdesign",
       "chapterId": "isdesign-ch4",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "戴尔经验之塔"
+      ]
     },
     {
       "id": "isdesign-ch4-kp5",
@@ -4763,7 +5264,9 @@
       "subjectId": "isdesign",
       "chapterId": "isdesign-ch4",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "教学媒体"
+      ]
     },
     {
       "id": "isdesign-ch4-kp7",
@@ -4773,7 +5276,9 @@
       "subjectId": "isdesign",
       "chapterId": "isdesign-ch4",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "学习资源"
+      ]
     },
     {
       "id": "isdesign-ch4-kp8",
@@ -4793,7 +5298,9 @@
       "subjectId": "isdesign",
       "chapterId": "isdesign-ch4",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "学习环境"
+      ]
     },
     {
       "id": "isdesign-ch4-kp10",
@@ -4803,7 +5310,9 @@
       "subjectId": "isdesign",
       "chapterId": "isdesign-ch4",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "学习环境"
+      ]
     },
     {
       "id": "isdesign-ch4-wp149",
@@ -4883,7 +5392,10 @@
       "subjectId": "isdesign",
       "chapterId": "isdesign-ch5",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "建构主义",
+        "形成性评价"
+      ]
     },
     {
       "id": "isdesign-ch5-kp3",
@@ -4893,7 +5405,9 @@
       "subjectId": "isdesign",
       "chapterId": "isdesign-ch5",
       "importance": 1,
-      "tags": []
+      "tags": [
+        "形成性评价"
+      ]
     },
     {
       "id": "isdesign-ch5-kp4",
@@ -4913,7 +5427,10 @@
       "subjectId": "isdesign",
       "chapterId": "isdesign-ch5",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "形成性评价",
+        "量规"
+      ]
     },
     {
       "id": "isdesign-ch5-kp7",
@@ -4933,7 +5450,9 @@
       "subjectId": "isdesign",
       "chapterId": "isdesign-ch5",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "量规"
+      ]
     },
     {
       "id": "isdesign-ch5-kp9",
@@ -4943,7 +5462,9 @@
       "subjectId": "isdesign",
       "chapterId": "isdesign-ch5",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "量规"
+      ]
     },
     {
       "id": "isdesign-ch5-kp11",
@@ -4963,7 +5484,9 @@
       "subjectId": "isdesign",
       "chapterId": "isdesign-ch5",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "量规"
+      ]
     },
     {
       "id": "isdesign-ch5-kp13",
@@ -5053,7 +5576,10 @@
       "subjectId": "isdesign",
       "chapterId": "isdesign-ch6",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "建构主义",
+        "教学设计"
+      ]
     },
     {
       "id": "isdesign-ch6-kp3",
@@ -5063,7 +5589,9 @@
       "subjectId": "isdesign",
       "chapterId": "isdesign-ch6",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "教学设计"
+      ]
     },
     {
       "id": "isdesign-ch6-kp4",
@@ -5073,7 +5601,12 @@
       "subjectId": "isdesign",
       "chapterId": "isdesign-ch6",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "建构主义",
+        "教学设计",
+        "学习环境",
+        "学习资源"
+      ]
     },
     {
       "id": "isdesign-ch6-kp5",
@@ -5083,7 +5616,10 @@
       "subjectId": "isdesign",
       "chapterId": "isdesign-ch6",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "建构主义",
+        "教学媒体"
+      ]
     },
     {
       "id": "isdesign-ch6-kp7",
@@ -5093,7 +5629,10 @@
       "subjectId": "isdesign",
       "chapterId": "isdesign-ch6",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "量规",
+        "教学设计"
+      ]
     },
     {
       "id": "isdesign-ch6-kp8",
@@ -5103,7 +5642,9 @@
       "subjectId": "isdesign",
       "chapterId": "isdesign-ch6",
       "importance": 1,
-      "tags": []
+      "tags": [
+        "量规"
+      ]
     },
     {
       "id": "isdesign-ch6-kp9",
@@ -5123,7 +5664,10 @@
       "subjectId": "isdesign",
       "chapterId": "isdesign-ch6",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "建构主义",
+        "维果斯基"
+      ]
     },
     {
       "id": "isdesign-ch6-wp181",
@@ -5223,7 +5767,11 @@
       "subjectId": "research",
       "chapterId": "research-ch1",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "绩效技术",
+        "教学设计",
+        "学习环境"
+      ]
     },
     {
       "id": "research-ch1-kp5",
@@ -5233,7 +5781,9 @@
       "subjectId": "research",
       "chapterId": "research-ch1",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "系统论"
+      ]
     },
     {
       "id": "research-ch1-kp7",
@@ -5393,7 +5943,9 @@
       "subjectId": "research",
       "chapterId": "research-ch2",
       "importance": 0,
-      "tags": []
+      "tags": [
+        "教学媒体"
+      ]
     },
     {
       "id": "research-ch2-kp11",

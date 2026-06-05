@@ -2,14 +2,15 @@
 // 按年份倒序排列，每个条目包含：年份、术语、答案、是否重要
 
 export interface ExamItem {
+  id: string;
   year: number;
   term: string;
   answer: string;
-  important: boolean; // 高频考点
+  important: boolean;
 }
 
 // 提取自 729历年真题所有名词解释整合带答案参考.txt
-export const examItems: ExamItem[] = [
+const _items: Omit<ExamItem, 'id'>[] = [
   {
     year: 2021, term: '学习分析', important: true,
     answer: '大数据在教育领域的运用是学习分析产生的前提，学习分析是通过对学习者及其情境数据的测量、采集、分析和报告，了解和优化学习和学习发生的情境。',
@@ -151,6 +152,12 @@ export const examItems: ExamItem[] = [
     answer: '学生支配自己内部心理加工过程的技能，实现对自己学习行为的修正和调节。指学生如何获取、选择、组织信息以及保持和检索不同类型知识方面的策略。',
   },
 ];
+
+// Auto-generate ids: exam-{year}-{index}
+export const examItems: ExamItem[] = _items.map((item, i) => {
+  const yearIdx = _items.filter((x, j) => x.year === item.year && j <= i).length;
+  return { ...item, id: `exam-${item.year}-${String(yearIdx).padStart(2, '0')}` };
+});
 
 // 按年份分组
 export function groupByYear(items: ExamItem[]): Map<number, ExamItem[]> {
