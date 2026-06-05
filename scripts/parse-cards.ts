@@ -350,9 +350,22 @@ function genQ(kp: any): string {
   }
 }
 
+function cleanTable(md: string): string {
+  // Remove rows where first cell is empty (merged-cell continuation rows)
+  const lines = md.split('\n');
+  const clean = lines.filter(l => {
+    const cells = l.split('|').map(c => c.trim());
+    // Keep header, separator, and rows with non-empty first data cell
+    if (/^\|[\s\-:|]+\|$/.test(l)) return true; // separator row
+    if (/^\|.+\|$/.test(l) && cells.length >= 2 && !cells[1]) return false; // empty first cell
+    return true;
+  });
+  return stripMd(clean.join('\n'));
+}
+
 function genA(kp: any): string {
   const c = kp.content.trim();
-  if (hasTable(c)) return c;
+  if (hasTable(c)) return cleanTable(c);
   if (hasList(c)) return listItems(c).join('\n');
   const ls = c.split('\n').filter(l => l.trim());
   return stripMd(ls.length <= 6 ? c : ls.slice(0, 5).join('\n'));

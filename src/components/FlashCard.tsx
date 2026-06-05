@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Card, Button } from 'animal-island-ui';
+import MarkdownRenderer from './MarkdownRenderer';
 
 interface FlashCardProps {
   question: string;
@@ -51,7 +52,11 @@ export default function FlashCard({ question, answer, index, total, onCorrect, o
           🍃
         </div>
         <div style={{ fontSize: 16, fontWeight: 700, marginBottom: 12 }}>
-          {flipped ? answer : question}
+          {flipped ? (
+            <div style={{ textAlign: 'left', fontWeight: 400, fontSize: 14 }}>
+              <MarkdownRenderer content={answer} />
+            </div>
+          ) : question}
         </div>
         {!flipped && (
           <div style={{ fontSize: 11, color: 'var(--animal-text-color-secondary, #9f927d)' }}>
