@@ -6,6 +6,7 @@ interface ChapterHeroProps {
   chapterNumber: number;
   importance: number;
   tags: string[];
+  sourceRef?: string;
 }
 
 const STAR: React.CSSProperties = {
@@ -15,7 +16,7 @@ const STAR: React.CSSProperties = {
   animation: 'heartbeat 2s ease-in-out infinite',
 };
 
-export default function ChapterHero({ title, chapterNumber, importance, tags }: ChapterHeroProps) {
+export default function ChapterHero({ title, chapterNumber, importance, tags, sourceRef }: ChapterHeroProps) {
   return (
     <Card color="app-teal" style={{ marginBottom: 16 }}>
       <div style={{
@@ -37,6 +38,11 @@ export default function ChapterHero({ title, chapterNumber, importance, tags }: 
           📖 第{chapterNumber}章
         </div>
         <div style={{ fontSize: 18, fontWeight: 800, marginTop: 2 }}>{title}</div>
+        {sourceRef && (
+          <div style={{ fontSize: 11, opacity: 0.85, marginTop: 4 }}>
+            📖 原文出处：{sourceRef}
+          </div>
+        )}
         {tags.length > 0 && (
           <div style={{ marginTop: 8, display: 'flex', gap: 6, flexWrap: 'wrap' }}>
             {tags.map(tag => (

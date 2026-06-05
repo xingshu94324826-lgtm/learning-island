@@ -110,6 +110,7 @@ export default function SubjectPage() {
         chapterNumber={chapter.order}
         importance={chapter.importance}
         tags={chapter.knowledgePoints.slice(0, 4).map(k => k.title.replace(/[★☆\s]/g, '').substring(0, 8))}
+        sourceRef={chapter.sourceRef}
       />
 
       {/* ── 章节掌握度 ── */}
@@ -146,7 +147,20 @@ export default function SubjectPage() {
       </div>
 
       {/* ── 知识框架树 ── */}
-      {chapter.frameworkTree && <FrameworkTree tree={chapter.frameworkTree} />}
+      {chapter.frameworkTree && (
+        <FrameworkTree
+          tree={chapter.frameworkTree}
+          knowledgePoints={chapter.knowledgePoints}
+          onNodeClick={(kpId) => {
+            const el = document.querySelector(`[data-kp-id="${kpId}"]`);
+            if (el) {
+              el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+              el.classList.add('kp-highlight');
+              setTimeout(() => el.classList.remove('kp-highlight'), 1500);
+            }
+          }}
+        />
+      )}
 
       {/* ── 知识点卡片 —— 全部可折叠 ── */}
       <div style={{
@@ -157,11 +171,12 @@ export default function SubjectPage() {
         📋 核心考点（点击展开）
       </div>
       {chapter.knowledgePoints.map(kp => (
-        <KnowledgeCard
-          key={kp.id}
-          kp={kp}
-          defaultExpanded={kp.importance >= 4}
-        />
+        <div key={kp.id} data-kp-id={kp.id}>
+          <KnowledgeCard
+            kp={kp}
+            defaultExpanded={kp.importance >= 4}
+          />
+        </div>
       ))}
 
       <div style={{ margin: '20px 0' }}>

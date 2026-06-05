@@ -11,6 +11,30 @@ const SUBJECTS: Record<string, { id: string; name: string; icon: string }> = {
   '研究方法': { id: 'research', name: '教育技术学研究方法', icon: '🔬' },
 };
 
+const SOURCE_REF_MAP: Record<string, Record<number, string>> = {
+  edutech: {
+    1: '《教育技术学》第一章 1.1-1.2 节',
+    2: '《教育技术学》第二章 2.1-2.4 节',
+    3: '《教育技术学》第三至四章 3.1-4.2 节',
+    5: '《教育技术学》第五章 5.1-5.5 节',
+    6: '《教育技术学》第六至十章 6.1-10.3 节',
+  },
+  isdesign: {
+    1: '《教学系统设计》第一单元',
+    2: '《教学系统设计》第二单元',
+    3: '《教学系统设计》第三单元',
+    4: '《教学系统设计》第四单元',
+    5: '《教学系统设计》第五单元',
+    6: '《教学系统设计》第六单元',
+  },
+  research: {
+    1: '《教育技术学研究方法》第一章',
+    2: '《教育技术学研究方法》第二章',
+    3: '《教育技术学研究方法》第三章',
+    4: '《教育技术学研究方法》第四至六章',
+  },
+};
+
 // ── Utils ──
 
 function stripMd(text: string): string {
@@ -162,7 +186,8 @@ function parseMarkdown(filePath: string) {
   const wps = extractWeakPoints(lines);
 
   console.log(`  ✓ ${chId}: ${chTitle} (${kps.length}KPs ${eps.length}EPs ${wps.length}WPs)`);
-  return { id: chId, subjectId: sub.id, order, title: chTitle, importance: parseImportance(lines[0]), frameworkTree: extractFrameworkTree(lines), knowledgePoints: kps, errorProne: eps, weakPoints: wps };
+  const sourceRef = SOURCE_REF_MAP[sub.id]?.[order];
+  return { id: chId, subjectId: sub.id, order, title: chTitle, importance: parseImportance(lines[0]), frameworkTree: extractFrameworkTree(lines), knowledgePoints: kps, errorProne: eps, weakPoints: wps, sourceRef };
 }
 
 // ── Flashcard generation ──

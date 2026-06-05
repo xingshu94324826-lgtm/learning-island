@@ -63,3 +63,23 @@
   position: absolute;
   animation: confetti 1.2s ease-out forwards;
 }
+
+/* Framework tree interactive styles */
+.tree-node-clickable {
+  border-radius: 6px;
+  transition: background 0.15s ease;
+}
+
+.tree-node-clickable:hover {
+  background: rgba(25, 200, 185, 0.08);
+}
+
+@keyframes kpHighlight {
+  0%   { background: rgba(25, 200, 185, 0.2); }
+  100% { background: transparent; }
+}
+
+.kp-highlight {
+  animation: kpHighlight 1.5s ease-out;
+  border-radius: 14px;
+}

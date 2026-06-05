@@ -17,6 +17,7 @@ export interface Chapter {
   knowledgePoints: KnowledgePoint[];
   errorProne: string[];
   weakPoints: string[];
+  sourceRef?: string;
 }
 
 // 知识点
