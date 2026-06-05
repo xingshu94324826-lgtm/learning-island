@@ -40,29 +40,32 @@ export default function KnowledgeCard({ kp, defaultExpanded = false }: Knowledge
     <div style={{ marginBottom: 12, borderLeft: `4px solid ${borderColor}`, borderRadius: '0 16px 16px 0', background: '#fff' }}>
       <Collapse
         question={
-          <div style={{ display: 'flex', alignItems: 'center', gap: 8, width: '100%' }}>
-            <span style={{ fontWeight: 700, fontSize: 14, flex: 1 }}>{kp.title}</span>
-            
-            {/* 掌握度快速选择 */}
-            <div style={{ display: 'flex', gap: 2 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, width: '100%', flexWrap: 'wrap' }}>
+            <span style={{ fontWeight: 700, fontSize: 14, flex: 1, minWidth: 120 }}>{kp.title}</span>
+
+            {/* 掌握度星级评等 */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: 4, padding: '2px 6px', background: '#f8f9fa', borderRadius: 10 }}>
+              <span style={{ fontSize: 10, color: '#999', marginRight: 2 }}>掌握</span>
               {[1,2,3,4,5].map(level => (
                 <button
                   key={level}
                   onClick={(e) => { e.stopPropagation(); handleMasteryChange(level as MasteryLevel); }}
                   style={{
-                    width: 24, height: 24, borderRadius: 6, border: 'none',
-                    background: currentProgress.mastery >= level ? masteryColors[level] : '#f1f1f1',
-                    color: currentProgress.mastery >= level ? '#fff' : '#999',
-                    fontSize: 12, cursor: 'pointer'
+                    width: 28, height: 28, borderRadius: 8, border: 'none',
+                    background: currentProgress.mastery >= level ? masteryColors[level] : '#e8e8e8',
+                    color: currentProgress.mastery >= level ? '#fff' : '#bbb',
+                    fontSize: 16, fontWeight: 700, cursor: 'pointer',
+                    transition: 'all .15s',
+                    lineHeight: '28px',
                   }}
-                  title={`掌握度 ${level}`}
+                  title={`掌握度 ${level} — ${['','模糊','一般','理解','熟练','精通'][level]}`}
                 >
-                  {level}
+                  {currentProgress.mastery >= level ? '★' : '☆'}
                 </button>
               ))}
             </div>
 
-            {kp.importance >= 3 && <span style={{color: '#f5c31c'}}>{'★'.repeat(kp.importance)}</span>}
+            {kp.importance >= 3 && <span style={{color: '#f5c31c', fontSize: 13}}>{'★'.repeat(kp.importance)}</span>}
           </div>
         }
         answer={
