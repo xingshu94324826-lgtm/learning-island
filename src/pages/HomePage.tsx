@@ -165,6 +165,9 @@ export default function HomePage() {
         <Button type="dashed" size="large" onClick={() => navigate(`/graph/${data.subjects[0]?.id || 'edutech'}`)}>
           🧠 知识图谱
         </Button>
+        <Button type="text" size="large" onClick={() => navigate('/changelog')}>
+          📋 更新日志
+        </Button>
         {mastery.totalWeakRemaining > 0 && mastery.weakestChapter && (
           <Button type="primary" size="large"
             onClick={() => navigate(`/subject/${mastery.weakestChapter.subjectId}`)}>

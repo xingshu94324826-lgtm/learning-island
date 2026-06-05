@@ -10,6 +10,7 @@ import SearchPage from './pages/SearchPage';
 import GraphPage from './pages/GraphPage';
 import ExamPage from './pages/ExamPage';
 import TemplatePage from './pages/TemplatePage';
+import ChangelogPage from './pages/ChangelogPage';
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
           <Route path="/search" element={<SearchPage />} />
           <Route path="/exam" element={<ExamPage />} />
           <Route path="/template" element={<TemplatePage />} />
+          <Route path="/changelog" element={<ChangelogPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </ProgressProvider>
