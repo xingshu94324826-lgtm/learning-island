@@ -9,7 +9,7 @@ import type { KnowledgeBase } from '../types';
 
 const data = knowledgeData as KnowledgeBase;
 
-type FilterMode = 'all' | 'weak';
+type FilterMode = 'all' | 'weak' | 'chapterWeak';
 
 export default function FlashcardsPage() {
   const { subjectId } = useParams<{ subjectId: string }>();
@@ -18,12 +18,27 @@ export default function FlashcardsPage() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [filterSubject, setFilterSubject] = useState(subjectId || 'all');
   const [searchParams] = useSearchParams();
-  const [filterMode, setFilterMode] = useState<FilterMode>(
-    searchParams.get('mode') === 'weak' ? 'weak' : 'all'
-  );
+  const initialMode: FilterMode =
+    searchParams.get('mode') === 'weak' ? 'weak' :
+    searchParams.get('mode') === 'chapterWeak' ? 'chapterWeak' : 'all';
+  const [filterMode, setFilterMode] = useState<FilterMode>(initialMode);
   const [weakPool, setWeakPool] = useLocalStorage<string[]>('fc-weak-pool', []);
+  const [checkedMap] = useLocalStorage<Record<string, string[]>>('weak-pts-all', {});
   const [correctCount, setCorrectCount] = useState(0);
   const [wrongCount, setWrongCount] = useState(0);
+
+  // Compute chapters with unresolved weak points
+  const chaptersWithWeak = useMemo(() => {
+    const result: Set<string> = new Set();
+    for (const sub of data.subjects) {
+      const checked = checkedMap[`weak-pts-${sub.id}`] || [];
+      for (const ch of sub.chapters) {
+        const unresolved = ch.weakPoints.filter(wp => !checked.includes(wp));
+        if (unresolved.length > 0) result.add(ch.id);
+      }
+    }
+    return result;
+  }, [checkedMap]);
 
   // All cards for subject
   const subjectCards = useMemo(() => {
@@ -31,13 +46,16 @@ export default function FlashcardsPage() {
     return data.flashcards.filter(fc => fc.id.startsWith(filterSubject));
   }, [filterSubject]);
 
-  // Apply weak filter
+  // Apply filters
   const filteredCards = useMemo(() => {
+    let cards = subjectCards;
     if (filterMode === 'weak') {
-      return subjectCards.filter(fc => weakPool.includes(fc.id));
+      cards = cards.filter(fc => weakPool.includes(fc.id));
+    } else if (filterMode === 'chapterWeak') {
+      cards = cards.filter(fc => chaptersWithWeak.has(fc.chapterId));
     }
-    return subjectCards;
-  }, [subjectCards, filterMode, weakPool]);
+    return cards;
+  }, [subjectCards, filterMode, weakPool, chaptersWithWeak]);
 
   const currentCard = filteredCards[currentIndex];
 
@@ -46,14 +64,16 @@ export default function FlashcardsPage() {
     ...data.subjects.map(s => ({ key: s.id, label: `${s.icon} ${s.name}` })),
   ];
 
-  const modeOptions = [
+  const chapterWeakCount = subjectCards.filter(fc => chaptersWithWeak.has(fc.chapterId)).length;
+
+  const modeOptions: { key: string; label: string }[] = [
     { key: 'all', label: `全部 (${subjectCards.length})` },
-    { key: 'weak', label: `弱项 (${subjectCards.filter(c => weakPool.includes(c.id)).length})` },
+    { key: 'weak', label: `闪卡弱项 (${subjectCards.filter(c => weakPool.includes(c.id)).length})` },
+    { key: 'chapterWeak', label: `薄弱章节 (${chapterWeakCount})` },
   ];
 
   const handleCorrect = () => {
     setCorrectCount(c => c + 1);
-    // Remove from weak pool if it was weak
     if (weakPool.includes(currentCard.id)) {
       setWeakPool(prev => prev.filter(id => id !== currentCard.id));
     }
@@ -62,7 +82,6 @@ export default function FlashcardsPage() {
 
   const handleWrong = () => {
     setWrongCount(c => c + 1);
-    // Add to weak pool
     if (!weakPool.includes(currentCard.id)) {
       setWeakPool(prev => [...prev, currentCard.id]);
     }
@@ -81,7 +100,7 @@ export default function FlashcardsPage() {
     setWrongCount(0);
   };
 
-  const isFinished = filteredCards.length === 0 || currentIndex >= filteredCards.length - 1;
+  const isFinished = filteredCards.length === 0 || currentIndex >= filteredCards.length;
 
   return (
     <AppShell>
@@ -97,7 +116,23 @@ export default function FlashcardsPage() {
         </div>
       </div>
 
-      {/* Empty weak pool */}
+      {/* Empty: chapter weak */}
+      {filterMode === 'chapterWeak' && filteredCards.length === 0 && (
+        <Card>
+          <div style={{ textAlign: 'center', padding: 40 }}>
+            <div style={{ fontSize: 40 }}>🎉</div>
+            <div style={{ fontSize: 14, fontWeight: 700, marginTop: 10 }}>所有章节的薄弱点已清空！</div>
+            <div style={{ fontSize: 12, color: 'var(--animal-text-color-secondary, #9f927d)', marginTop: 4 }}>
+              去章节页勾选新的薄弱点后再来练习
+            </div>
+            <div style={{ marginTop: 12, display: 'flex', gap: 8, justifyContent: 'center' }}>
+              <Button type="primary" onClick={() => setFilterMode('all')}>回到全部</Button>
+            </div>
+          </div>
+        </Card>
+      )}
+
+      {/* Empty: weak pool */}
       {filterMode === 'weak' && filteredCards.length === 0 && (
         <Card>
           <div style={{ textAlign: 'center', padding: 40 }}>
@@ -113,7 +148,7 @@ export default function FlashcardsPage() {
         </Card>
       )}
 
-      {/* Empty all */}
+      {/* Empty: all */}
       {filterMode === 'all' && filteredCards.length === 0 && (
         <Card>
           <div style={{ textAlign: 'center', padding: 40 }}>
@@ -164,6 +199,11 @@ export default function FlashcardsPage() {
               {filterMode === 'all' && weakPool.length > 0 && (
                 <Button type="default" onClick={() => { setFilterMode('weak'); reset(); }}>
                   🎯 专项攻克弱项 ({weakPool.length})
+                </Button>
+              )}
+              {filterMode !== 'chapterWeak' && chapterWeakCount > 0 && (
+                <Button type="default" onClick={() => { setFilterMode('chapterWeak'); reset(); }}>
+                  📖 薄弱章节闪卡 ({chapterWeakCount})
                 </Button>
               )}
               <Button type="default" onClick={() => navigate('/')}>🏠 返回首页</Button>

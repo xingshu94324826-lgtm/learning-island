@@ -5,6 +5,8 @@ import SubjectPage from './pages/SubjectPage';
 import FlashcardsPage from './pages/FlashcardsPage';
 import SearchPage from './pages/SearchPage';
 import GraphPage from './pages/GraphPage';
+import ExamPage from './pages/ExamPage';
+import TemplatePage from './pages/TemplatePage';
 
 export default function App() {
   return (
@@ -15,6 +17,8 @@ export default function App() {
         <Route path="/flashcards/:subjectId" element={<FlashcardsPage />} />
         <Route path="/graph/:subjectId" element={<GraphPage />} />
         <Route path="/search" element={<SearchPage />} />
+        <Route path="/exam" element={<ExamPage />} />
+        <Route path="/template" element={<TemplatePage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </HashRouter>

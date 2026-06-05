@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { Card, Button } from 'animal-island-ui';
 import AppShell from '../components/AppShell';
 import NpcBubble from '../components/NpcBubble';
@@ -11,6 +11,7 @@ const data = knowledgeData as KnowledgeBase;
 
 export default function HomePage() {
   const navigate = useNavigate();
+  const location = useLocation();
   const mastery = useMastery();
 
   const totalChapters = data.subjects.reduce((s, sub) => s + sub.chapters.length, 0);
@@ -25,8 +26,47 @@ export default function HomePage() {
     mastery.overallScore >= 60 ? '#19c8b9' :
     mastery.overallScore >= 40 ? '#f5c31c' : '#fc736d';
 
+  // Learning mode (derived from current path)
+  const isHomePage = location.pathname === '/';
+
   return (
     <AppShell>
+      {/* ── 三轮学习模式切换 ── */}
+      {isHomePage && (
+        <div style={{
+          display: 'flex', gap: 6, justifyContent: 'center', marginBottom: 16,
+          flexWrap: 'wrap',
+        }}>
+          <div style={{
+            display: 'flex', background: 'var(--animal-border-color-light, #e8e2d6)',
+            borderRadius: 14, padding: 3, gap: 2,
+          }}>
+            <button onClick={() => navigate('/')} style={{
+              padding: '8px 16px', borderRadius: 12, border: 'none',
+              fontSize: 13, fontWeight: 700, cursor: 'pointer',
+              background: '#fff', color: 'var(--animal-text-color, #794f27)',
+              boxShadow: '0 1px 4px rgba(0,0,0,.08)',
+            }}>
+              🏗️ 第一轮 · 建骨架
+            </button>
+            <button onClick={() => navigate('/exam')} style={{
+              padding: '8px 16px', borderRadius: 12, border: 'none',
+              fontSize: 13, fontWeight: 600, cursor: 'pointer',
+              background: 'transparent', color: 'var(--animal-text-color-secondary, #9f927d)',
+            }}>
+              📝 第二轮 · 刷真题
+            </button>
+            <button onClick={() => navigate('/template')} style={{
+              padding: '8px 16px', borderRadius: 12, border: 'none',
+              fontSize: 13, fontWeight: 600, cursor: 'pointer',
+              background: 'transparent', color: 'var(--animal-text-color-secondary, #9f927d)',
+            }}>
+              📐 第三轮 · 练输出
+            </button>
+          </div>
+        </div>
+      )}
+
       {/* ── Overall gauge ── */}
       <div style={{
         display: 'flex', alignItems: 'center', gap: 16,

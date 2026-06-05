@@ -242,6 +242,14 @@ export default function SubjectPage() {
           下一章 →
         </Button>
       </div>
+      {chapter.weakPoints.length > 0 && (
+        <div style={{ marginTop: 10, textAlign: 'center' }}>
+          <Button type="text" size="small"
+            onClick={() => navigate(`/flashcards/${subjectId}?mode=chapterWeak`)}>
+            🎯 薄弱章节闪卡（包含本章）
+          </Button>
+        </div>
+      )}
 
       {/* Celebration when all weak points resolved */}
       <Celebration
