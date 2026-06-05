@@ -123,10 +123,10 @@ export default function FlashcardsPage() {
             <div style={{ fontSize: 40 }}>🎉</div>
             <div style={{ fontSize: 14, fontWeight: 700, marginTop: 10 }}>所有章节的薄弱点已清空！</div>
             <div style={{ fontSize: 12, color: 'var(--animal-text-color-secondary, #9f927d)', marginTop: 4 }}>
-              去章节页勾选新的薄弱点后再来练习
+              前往章节页，标记需要复习的考点，再回来练习
             </div>
             <div style={{ marginTop: 12, display: 'flex', gap: 8, justifyContent: 'center' }}>
-              <Button type="primary" onClick={() => setFilterMode('all')}>回到全部</Button>
+              <Button type="primary" onClick={() => setFilterMode('all')}>返回全部考点</Button>
             </div>
           </div>
         </Card>
@@ -137,12 +137,12 @@ export default function FlashcardsPage() {
         <Card>
           <div style={{ textAlign: 'center', padding: 40 }}>
             <div style={{ fontSize: 40 }}>🎉</div>
-            <div style={{ fontSize: 14, fontWeight: 700, marginTop: 10 }}>弱项池已清空！</div>
+            <div style={{ fontSize: 14, fontWeight: 700, marginTop: 10 }}>所有薄弱点已清空！</div>
             <div style={{ fontSize: 12, color: 'var(--animal-text-color-secondary, #9f927d)', marginTop: 4 }}>
               所有不确定的卡片都已掌握
             </div>
             <div style={{ marginTop: 12, display: 'flex', gap: 8, justifyContent: 'center' }}>
-              <Button type="primary" onClick={() => setFilterMode('all')}>回到全部</Button>
+              <Button type="primary" onClick={() => setFilterMode('all')}>返回全部考点</Button>
             </div>
           </div>
         </Card>
@@ -154,7 +154,7 @@ export default function FlashcardsPage() {
           <div style={{ textAlign: 'center', padding: 40 }}>
             <div style={{ fontSize: 40 }}>📭</div>
             <div style={{ fontSize: 14, fontWeight: 700, marginTop: 10 }}>该科目暂无闪卡</div>
-            <Button type="primary" style={{ marginTop: 12 }} onClick={() => navigate('/')}>返回首页</Button>
+            <Button type="primary" style={{ marginTop: 12 }} onClick={() => navigate('/')}>🏠 返回首页</Button>
           </div>
         </Card>
       )}
@@ -179,7 +179,7 @@ export default function FlashcardsPage() {
             <span>✅ {correctCount}</span>
             <span>❌ {wrongCount}</span>
             <span>📊 {correctCount + wrongCount > 0 ? Math.round(correctCount / (correctCount + wrongCount) * 100) : 0}%</span>
-            <span>📦 弱项池 {weakPool.length}</span>
+            <span>📦 薄弱点 {weakPool.length}</span>
           </div>
         </>
       )}
@@ -189,7 +189,7 @@ export default function FlashcardsPage() {
         <div style={{ textAlign: 'center', marginTop: 24 }}>
           <Card color="app-green">
             <div style={{ fontSize: 32, marginBottom: 8 }}>🎉</div>
-            <div style={{ fontSize: 16, fontWeight: 700 }}>本轮完成</div>
+            <div style={{ fontSize: 16, fontWeight: 700 }}>本轮完成！</div>
             <div style={{ fontSize: 13, marginTop: 4, opacity: 0.8 }}>
               ✅ {correctCount}  ❌ {wrongCount}
               {filterMode === 'weak' && weakPool.length === 0 ? ' — 弱项全部清除！' : ''}
@@ -206,7 +206,7 @@ export default function FlashcardsPage() {
                   📖 薄弱章节闪卡 ({chapterWeakCount})
                 </Button>
               )}
-              <Button type="default" onClick={() => navigate('/')}>🏠 返回首页</Button>
+              <Button type="default" onClick={() => navigate('/')}>🏠 🏠 返回首页</Button>
             </div>
           </Card>
         </div>

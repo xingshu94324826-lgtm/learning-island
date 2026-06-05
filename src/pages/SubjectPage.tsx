@@ -35,7 +35,7 @@ export default function SubjectPage() {
         <div style={{ textAlign: 'center', padding: 60 }}>
           <div style={{ fontSize: 48 }}>🤔</div>
           <div style={{ fontSize: 16, fontWeight: 700, margin: '12px 0', color: 'var(--animal-text-color, #794f27)' }}>
-            科目未找到
+            找不到该科目，请返回首页重新选择
           </div>
           <Button type="primary" onClick={() => navigate('/')}>← 返回首页</Button>
         </div>

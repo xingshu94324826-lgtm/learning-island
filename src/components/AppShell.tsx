@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Cursor, Footer, Button } from 'animal-island-ui';
 import '../styles/animations.css';
+import knowledgeData from '../data/knowledge.json';
 
 interface AppShellProps {
   children: React.ReactNode;
@@ -73,6 +74,14 @@ export default function AppShell({ children, showLeaves = true }: AppShellProps)
   const navigate = useNavigate();
   const location = useLocation();
 
+  const counts = React.useMemo(() => {
+    const subs = knowledgeData.subjects.length;
+    const chs = knowledgeData.subjects.reduce((s, sub) => s + sub.chapters.length, 0);
+    const kps = knowledgeData.subjects.reduce((s, sub) =>
+      s + sub.chapters.reduce((cs, ch) => cs + ch.knowledgePoints.length, 0), 0);
+    return `${subs} 科目 · ${chs} 章 · ${kps} 考点`;
+  }, []);
+
   return (
     <Cursor>
       {showLeaves && (
@@ -107,7 +116,7 @@ export default function AppShell({ children, showLeaves = true }: AppShellProps)
 
         <div style={BOTTOM}>
           <div style={{ fontSize: 20, marginBottom: 4 }}>🌴 🏠 🌊</div>
-          <div>729 教育技术学 · 共 3 科目 · 15 章 · 知识岛屿欢迎你回来</div>
+          <div>729 教育技术学 · 共 {counts} · 知识岛屿欢迎你回来</div>
         </div>
       </div>
       <Footer type="sea" />

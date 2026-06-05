@@ -100,7 +100,7 @@ export default function GraphPage() {
         🧠 {subject.name} · 知识结构
       </div>
       <div style={{ fontSize: 12, color: 'var(--animal-text-color-secondary, #9f927d)', marginBottom: 12 }}>
-        点击章节展开知识点，点击 tag 查看跨章关联
+        点击章节展开知识点，点击标签查看跨章关联
       </div>
 
       {/* Tag cloud */}

@@ -86,7 +86,7 @@ export default function SearchPage() {
           🎯 薄弱点复习优先级
         </div>
         {weakPointChapters.length === 0 ? (
-          <Card><div style={{ textAlign: 'center', padding: 24, fontSize: 13, color: 'var(--animal-text-color-secondary, #9f927d)' }}>🎉 暂无薄弱点！</div></Card>
+          <Card><div style={{ textAlign: 'center', padding: 24, fontSize: 13, color: 'var(--animal-text-color-secondary, #9f927d)' }}>🎉 所有薄弱点已攻克，继续保持！</div></Card>
         ) : (
           weakPointChapters.map(ch => (
             <Card key={ch.chapterId} color="default" style={{ marginBottom: 8, cursor: 'pointer' }}

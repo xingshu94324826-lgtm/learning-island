@@ -224,7 +224,7 @@ export default function ExamPage() {
                 <span>✅ {correctCount}</span>
                 <span>❌ {wrongCount}</span>
                 <span>📊 {correctCount + wrongCount > 0 ? Math.round(correctCount / (correctCount + wrongCount) * 100) : 0}%</span>
-                <span>📦 弱项池 {weakPool.length}</span>
+                <span>📦 薄弱点 {weakPool.length}</span>
               </div>
             </>
           )}
@@ -234,7 +234,7 @@ export default function ExamPage() {
             <Card>
               <div style={{ textAlign: 'center', padding: 40 }}>
                 <div style={{ fontSize: 40 }}>🎉</div>
-                <div style={{ fontSize: 14, fontWeight: 700, marginTop: 10 }}>名词解释弱项池已清空！</div>
+                <div style={{ fontSize: 14, fontWeight: 700, marginTop: 10 }}>名词解释薄弱点已全部攻克！</div>
                 <div style={{ marginTop: 12, display: 'flex', gap: 8, justifyContent: 'center' }}>
                   <Button type="primary" onClick={() => setFilterMode('all')}>回到全部</Button>
                 </div>
@@ -259,7 +259,7 @@ export default function ExamPage() {
                       🎯 专项攻克弱项 ({weakPool.length})
                     </Button>
                   )}
-                  <Button type="default" onClick={() => navigate('/')}>🏠 返回首页</Button>
+                  <Button type="default" onClick={() => navigate('/')}>← 返回首页</Button>
                 </div>
               </Card>
             </div>
@@ -332,7 +332,7 @@ export default function ExamPage() {
           ① {mode === 'list' ? '选择一个年份 → 遮住答案 → 在纸上写出 → 对照' : mode === 'qa' ? '看到术语 → 打字输出 → 对照答案 → 找关键词差距' : '逐题挑战 → 看术语 → 脑中回忆 → 翻卡对照 → 标记弱项'}<br/>
           ② 漏掉的关键词用红笔补上<br/>
           ③ 重复 3-5 遍，直到能完整输出<br/>
-          ④ 用"逐题挑战"模式攻克弱项池，用"问答练习"模拟复试输出
+          ④ 用"逐题挑战"模式攻克薄弱点，用"问答练习"模拟复试输出
         </div>
       </Card>
     </AppShell>
