@@ -87,11 +87,11 @@ export default function KnowledgeCard({ kp, defaultExpanded = false }: Knowledge
 
               {showNoteInput && (
                 <div style={{ display: 'flex', gap: 8, marginBottom: 12 }}>
-                  <Input 
-                    value={noteInput} 
+                  <Input
+                    value={noteInput}
                     onChange={e => setNoteInput(e.target.value)}
                     placeholder="记录你的理解、补充或发现的错误..."
-                    onPressEnter={handleAddNote}
+                    onKeyDown={(e: React.KeyboardEvent) => e.key === 'Enter' && handleAddNote()}
                   />
                   <Button type="primary" onClick={handleAddNote}>保存</Button>
                 </div>

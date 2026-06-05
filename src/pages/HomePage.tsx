@@ -15,7 +15,7 @@ export default function HomePage() {
   const navigate = useNavigate();
   const location = useLocation();
   const mastery = useMastery();
-  const { getOverallProgress, getWeakPoints } = useProgress();
+  const { getOverallProgress, getWeakPoints, progress } = useProgress();
 
   const progressScore = getOverallProgress();
   const weakPoints = getWeakPoints(5);
@@ -68,7 +68,7 @@ export default function HomePage() {
           <div>
             <div style={{ fontSize: 16, fontWeight: 700 }}>总掌握度 · {gradeLabel}</div>
             <div style={{ fontSize: 13, color: 'var(--animal-text-color-secondary)' }}>
-              已标记 {Object.keys(useProgress().progress).length} / {totalKPs} 个考点
+              已标记 {Object.keys(progress).length} / {totalKPs} 个考点
             </div>
           </div>
 
@@ -102,8 +102,76 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* 其余原有内容保持不变... */}
-      {/* Subject cards ... Quick actions ... */}
+      {/* ── Subject cards with mastery ── */}
+      <div style={{
+        display: 'grid',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
+        gap: 16, marginBottom: 28, marginTop: 20,
+      }}>
+        {mastery.subjects.map(sub => (
+          <Card
+            key={sub.subjectId}
+            color="default"
+            onClick={() => navigate(`/subject/${sub.subjectId}`)}
+            style={{ cursor: 'pointer', padding: '22px 18px' }}
+          >
+            <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+              <div style={{ fontSize: 36 }}>{sub.subjectIcon}</div>
+              <div style={{ flex: 1, minWidth: 0 }}>
+                <div style={{ fontSize: 14, fontWeight: 800, color: 'var(--animal-text-color, #794f27)' }}>
+                  {sub.subjectName}
+                </div>
+                <div style={{ fontSize: 11, color: 'var(--animal-text-color-secondary, #9f927d)' }}>
+                  {sub.chapters.length} 章 · {data.subjects.find(s => s.id === sub.subjectId)?.chapters.reduce((s, ch) => s + ch.knowledgePoints.length, 0) ?? 0} 考点
+                </div>
+                <div style={{ marginTop: 6, display: 'flex', alignItems: 'center', gap: 6 }}>
+                  <div style={{
+                    flex: 1, height: 4, background: 'var(--animal-border-color-light, #e8e2d6)',
+                    borderRadius: 2, overflow: 'hidden',
+                  }}>
+                    <div style={{
+                      height: '100%', width: `${sub.score}%`,
+                      background: sub.score >= 80 ? '#6fba2c' : sub.score >= 50 ? '#19c8b9' : sub.score >= 30 ? '#f5c31c' : '#fc736d',
+                      borderRadius: 2, transition: 'width 0.5s ease',
+                    }} />
+                  </div>
+                  <span style={{ fontSize: 12, fontWeight: 700, flexShrink: 0, color: 'var(--animal-text-color, #794f27)' }}>
+                    {sub.score}
+                  </span>
+                </div>
+              </div>
+            </div>
+            {/* Chapter mini-bars */}
+            <div style={{ display: 'flex', gap: 3, marginTop: 10 }}>
+              {sub.chapters.map(ch => (
+                <div key={ch.chapterId} style={{
+                  flex: 1, height: 3, borderRadius: 1.5,
+                  background: ch.score >= 80 ? '#6fba2c' : ch.score >= 50 ? '#19c8b9' : ch.score >= 30 ? '#f5c31c' : ch.score === 0 ? 'var(--animal-border-color-light, #e8e2d6)' : '#fc736d',
+                }} title={`第${ch.chapterOrder}章 ${ch.chapterTitle}: ${ch.score}`} />
+              ))}
+            </div>
+          </Card>
+        ))}
+      </div>
+
+      {/* ── Quick actions ── */}
+      <div style={{ display: 'flex', gap: 10, justifyContent: 'center', flexWrap: 'wrap' }}>
+        <Button type="primary" size="large" onClick={() => navigate('/search')}>
+          🔍 搜索考点
+        </Button>
+        <Button type="default" size="large" onClick={() => navigate('/flashcards/all')}>
+          ⚡ 刷闪卡 ({data.flashcards.length}张)
+        </Button>
+        <Button type="dashed" size="large" onClick={() => navigate(`/graph/${data.subjects[0]?.id || 'edutech'}`)}>
+          🧠 知识图谱
+        </Button>
+        {mastery.totalWeakRemaining > 0 && mastery.weakestChapter && (
+          <Button type="primary" size="large"
+            onClick={() => navigate(`/subject/${mastery.weakestChapter.subjectId}`)}>
+            🎯 最弱章节
+          </Button>
+        )}
+      </div>
     </AppShell>
   );
 }
