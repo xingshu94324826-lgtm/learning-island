@@ -67,6 +67,8 @@ const BOTTOM: React.CSSProperties = {
 
 const NAV_ITEMS = [
   { path: '/', label: '🏝️ 首页' },
+  { path: '/quick', label: '⚡ 速测' },
+  { path: '/review', label: '🎯 弱点' },
   { path: '/search', label: '🔍 搜索' },
 ];
 
