@@ -15,6 +15,8 @@ interface FrameworkTreeProps {
   tree: string;
   knowledgePoints?: KnowledgePoint[];
   onNodeClick?: (kpId: string) => void;
+  /** KP IDs that have unresolved weak points — highlighted in red */
+  weakKpIds?: Set<string>;
 }
 
 // ── Parsing ──
@@ -113,9 +115,19 @@ function matchToKP(nodeText: string, kps: KnowledgePoint[]): string | null {
   return null;
 }
 
+// Match weak point texts to KP IDs
+function resolveWeakKpIds(weakPoints: string[], kps: KnowledgePoint[]): Set<string> {
+  const ids = new Set<string>();
+  for (const wp of weakPoints) {
+    const id = matchToKP(wp, kps);
+    if (id) ids.add(id);
+  }
+  return ids;
+}
+
 // ── Component ──
 
-export default function FrameworkTree({ tree, knowledgePoints = [], onNodeClick }: FrameworkTreeProps) {
+export default function FrameworkTree({ tree, knowledgePoints = [], onNodeClick, weakKpIds }: FrameworkTreeProps) {
   if (!tree) return null;
 
   const nodes = useMemo(
@@ -164,6 +176,7 @@ export default function FrameworkTree({ tree, knowledgePoints = [], onNodeClick 
       }}>
         {nodes.map((node) => {
           const isClickable = node.matchedKpId !== null && !node.isConnector;
+          const isWeak = node.matchedKpId !== null && weakKpIds?.has(node.matchedKpId);
           const hasStar = node.rawText.includes('★');
 
           return (
@@ -174,16 +187,19 @@ export default function FrameworkTree({ tree, knowledgePoints = [], onNodeClick 
               style={{
                 paddingLeft: node.depth * 16,
                 paddingRight: 4,
-                color: isClickable
-                  ? 'var(--animal-primary-color, #19c8b9)'
-                  : hasStar
+                color: isWeak
+                  ? '#fc736d'
+                  : isClickable
                     ? 'var(--animal-primary-color, #19c8b9)'
-                    : undefined,
-                fontWeight: isClickable ? 600 : hasStar ? 700 : undefined,
+                    : hasStar
+                      ? 'var(--animal-primary-color, #19c8b9)'
+                      : undefined,
+                fontWeight: isWeak ? 700 : isClickable ? 600 : hasStar ? 700 : undefined,
                 cursor: isClickable ? 'pointer' : undefined,
                 whiteSpace: 'pre',
               }}
             >
+              {isWeak && <span style={{ fontSize: 9, marginRight: 2 }}>⚠️</span>}
               {node.rawText || ' '}
             </div>
           );

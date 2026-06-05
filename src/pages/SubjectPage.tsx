@@ -49,6 +49,24 @@ export default function SubjectPage() {
     ?.chapters.find(c => c.chapterId === chapter.id);
   const masteryScore = chapterMastery?.score ?? 0;
 
+  // Compute weak KP IDs for framework tree highlighting
+  const weakKpIds = useMemo(() => {
+    const unresolved = chapter.weakPoints.filter(wp => !checkedSet.has(wp));
+    const ids = new Set<string>();
+    for (const wp of unresolved) {
+      const n = wp.replace(/★/g, '').replace(/[☆（()）《》「」●]/g, '').replace(/\s+/g, ' ').trim().toLowerCase();
+      if (n.length < 2) continue;
+      for (const kp of chapter.knowledgePoints) {
+        const k = kp.title.replace(/★/g, '').replace(/[☆（()）《》「」●]/g, '').replace(/\s+/g, ' ').trim().toLowerCase();
+        if (k === n || (k.length >= 4 && n.length >= 4 && (k.includes(n) || n.includes(k)))) {
+          ids.add(kp.id);
+          break;
+        }
+      }
+    }
+    return ids;
+  }, [chapter.id, chapter.weakPoints, chapter.knowledgePoints, checkedSet]);
+
   const resolvedCount = chapter.weakPoints.filter(wp => checkedSet.has(wp)).length;
   const totalWeak = chapter.weakPoints.length;
   const allResolved = totalWeak > 0 && resolvedCount === totalWeak;
@@ -151,6 +169,7 @@ export default function SubjectPage() {
         <FrameworkTree
           tree={chapter.frameworkTree}
           knowledgePoints={chapter.knowledgePoints}
+          weakKpIds={weakKpIds}
           onNodeClick={(kpId) => {
             const el = document.querySelector(`[data-kp-id="${kpId}"]`);
             if (el) {

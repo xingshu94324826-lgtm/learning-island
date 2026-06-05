@@ -171,6 +171,66 @@ export default function HomePage() {
             🎯 最弱章节
           </Button>
         )}
+        <Button type="dashed" size="large" onClick={() => {
+          // Generate Markdown export
+          const lines: string[] = [];
+          lines.push('# 729 教育技术学 · 个人知识档案\n');
+          lines.push(`> 导出时间：${new Date().toLocaleString()}\n`);
+          lines.push(`> 总掌握度：${progressScore}%\n`);
+          lines.push(`> 已标记：${Object.keys(progress).length}/${totalKPs} 个考点\n`);
+          lines.push('---\n');
+          lines.push('## 掌握度统计\n');
+          lines.push(`| 等级 | 考点数 |`);
+          lines.push(`|------|--------|`);
+          for (let lv = 1; lv <= 5; lv++) {
+            const count = Object.values(progress).filter(p => p.mastery === lv).length;
+            lines.push(`| ${'⭐'.repeat(lv)} | ${count} |`);
+          }
+          lines.push('\n---\n');
+          for (const sub of data.subjects) {
+            lines.push(`## ${sub.icon} ${sub.name}\n`);
+            for (const ch of sub.chapters) {
+              lines.push(`### 第${ch.order}章 ${ch.title}\n`);
+              if (ch.frameworkTree) {
+                lines.push('```');
+                lines.push(ch.frameworkTree);
+                lines.push('```\n');
+              }
+              for (const kp of ch.knowledgePoints) {
+                const pr = progress[kp.id];
+                const star = pr?.mastery ? '⭐'.repeat(pr.mastery) : '⬜';
+                lines.push(`- ${star} **${kp.title.replace(/\*/g, '')}**`);
+                if (pr?.notes?.length) {
+                  for (const note of pr.notes) {
+                    lines.push(`  > 📝 ${note.content} (${note.updatedAt.slice(0,10)})`);
+                  }
+                }
+              }
+              lines.push('');
+            }
+          }
+          lines.push('---\n');
+          lines.push('## 薄弱点清单\n');
+          for (const sub of data.subjects) {
+            const checked: string[] = JSON.parse(localStorage.getItem(`weak-pts-${sub.id}`) || '[]');
+            for (const ch of sub.chapters) {
+              const unresolved = ch.weakPoints.filter(wp => !checked.includes(wp));
+              if (unresolved.length > 0) {
+                lines.push(`### ${sub.name} · 第${ch.order}章 ${ch.title}`);
+                for (const wp of unresolved) lines.push(`- [ ] ${wp}`);
+                lines.push('');
+              }
+            }
+          }
+          const blob = new Blob([lines.join('\n')], { type: 'text/markdown;charset=utf-8' });
+          const a = document.createElement('a');
+          a.href = URL.createObjectURL(blob);
+          a.download = `729-知识档案-${new Date().toISOString().slice(0,10)}.md`;
+          a.click();
+          URL.revokeObjectURL(a.href);
+        }}>
+          📥 导出档案
+        </Button>
       </div>
     </AppShell>
   );

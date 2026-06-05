@@ -6,7 +6,7 @@ import FlashCard from '../components/FlashCard';
 import { useLocalStorage } from '../hooks/useLocalStorage';
 import { examItems, groupByYear } from '../data/examData';
 
-type ExamMode = 'list' | 'quiz';
+type ExamMode = 'list' | 'quiz' | 'qa';
 type FilterMode = 'all' | 'weak';
 
 export default function ExamPage() {
@@ -21,6 +21,21 @@ export default function ExamPage() {
   const [weakPool, setWeakPool] = useLocalStorage<string[]>('exam-weak-pool', []);
   const [correctCount, setCorrectCount] = useState(0);
   const [wrongCount, setWrongCount] = useState(0);
+
+  // QA mode state
+  const [qaAnswer, setQaAnswer] = useState('');
+  const [qaRevealed, setQaRevealed] = useState(false);
+  const [qaItem, setQaItem] = useState(() => {
+    const important = examItems.filter(i => i.important);
+    return important[Math.floor(Math.random() * important.length)];
+  });
+
+  const pickNewQA = () => {
+    const important = examItems.filter(i => i.important);
+    setQaItem(important[Math.floor(Math.random() * important.length)]);
+    setQaAnswer('');
+    setQaRevealed(false);
+  };
 
   const yearMap = useMemo(() => groupByYear(examItems), []);
   const years = useMemo(() => [...yearMap.keys()].sort((a, b) => b - a), [yearMap]);
@@ -106,6 +121,15 @@ export default function ExamPage() {
             boxShadow: mode === 'quiz' ? '0 1px 3px rgba(0,0,0,.08)' : 'none',
           }}>
             🎴 逐题挑战
+          </button>
+          <button onClick={() => { setMode('qa'); pickNewQA(); }} style={{
+            padding: '6px 14px', borderRadius: 10, border: 'none',
+            fontSize: 12, fontWeight: mode === 'qa' ? 700 : 500, cursor: 'pointer',
+            background: mode === 'qa' ? '#fff' : 'transparent',
+            color: mode === 'qa' ? 'var(--animal-text-color, #794f27)' : 'var(--animal-text-color-secondary, #9f927d)',
+            boxShadow: mode === 'qa' ? '0 1px 3px rgba(0,0,0,.08)' : 'none',
+          }}>
+            ✍️ 问答练习
           </button>
         </div>
       </div>
@@ -243,14 +267,72 @@ export default function ExamPage() {
         </>
       )}
 
+      {/* ========== QA MODE ========== */}
+      {mode === 'qa' && qaItem && (
+        <div style={{ maxWidth: 640, margin: '0 auto' }}>
+          <Card color="default">
+            <div style={{ padding: 8 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 12 }}>
+                <span style={{ fontSize: 11, fontWeight: 600, padding: '2px 8px', borderRadius: 6,
+                  background: 'var(--animal-primary-color-bg, #e6f9f6)', color: 'var(--animal-primary-color, #19c8b9)' }}>
+                  {qaItem.year}年
+                </span>
+                <span style={{ fontWeight: 700, fontSize: 16 }}>{qaItem.term}</span>
+                {qaItem.important && <span style={{ fontSize: 10, color: '#fc736d' }}>★高频</span>}
+              </div>
+
+              <div style={{ fontSize: 12, color: 'var(--animal-text-color-secondary, #9f927d)', marginBottom: 8 }}>
+                ✍️ 在下方写出你能想到的全部内容，然后点"对照答案"
+              </div>
+
+              <textarea
+                value={qaAnswer}
+                onChange={e => setQaAnswer(e.target.value)}
+                placeholder="写下你的回答..."
+                style={{
+                  width: '100%', minHeight: 140, padding: 12, borderRadius: 10, border: '1px solid var(--animal-border-color-light, #e8e2d6)',
+                  fontSize: 13, lineHeight: 1.7, fontFamily: 'inherit', resize: 'vertical',
+                  background: qaRevealed ? 'rgba(25,200,185,.03)' : '#fff',
+                }}
+              />
+
+              <div style={{ display: 'flex', gap: 8, marginTop: 12, flexWrap: 'wrap' }}>
+                {!qaRevealed ? (
+                  <Button type="primary" onClick={() => setQaRevealed(true)}>👁 对照答案</Button>
+                ) : (
+                  <>
+                    <Button type="default" onClick={() => setQaRevealed(false)}>🙈 隐藏答案</Button>
+                    <Button type="primary" onClick={pickNewQA}>🎲 下一题</Button>
+                  </>
+                )}
+              </div>
+
+              {qaRevealed && (
+                <div style={{
+                  marginTop: 12, padding: '12px 16px', borderRadius: 10,
+                  background: 'rgba(25,200,185,.08)', fontSize: 13, lineHeight: 1.8,
+                  color: 'var(--animal-text-color-secondary, #6b5e4a)',
+                }}>
+                  <div style={{ fontWeight: 700, marginBottom: 4, color: 'var(--animal-primary-color, #19c8b9)' }}>📖 参考答案：</div>
+                  {qaItem.answer}
+                  <div style={{ marginTop: 10, fontSize: 11, color: 'var(--animal-text-color-secondary, #9f927d)' }}>
+                    💡 对照技巧：你的回答和参考答案的<strong>关键词</strong>重合了几成？漏掉的部分就是记忆盲区。
+                  </div>
+                </div>
+              )}
+            </div>
+          </Card>
+        </div>
+      )}
+
       {/* Tips */}
       <Card color="app-teal" style={{ marginTop: 24 }}>
         <div style={{ fontSize: 13, lineHeight: 1.8, color: '#fff' }}>
-          <div style={{ fontWeight: 700, marginBottom: 4 }}>💡 第二轮复习建议</div>
-          ① {mode === 'list' ? '选择一个年份 → 遮住答案 → 在纸上写出 → 对照' : '逐题挑战 → 看术语 → 脑中回忆 → 翻卡对照 → 标记弱项'}<br/>
+          <div style={{ fontWeight: 700, marginBottom: 4 }}>💡 复习建议</div>
+          ① {mode === 'list' ? '选择一个年份 → 遮住答案 → 在纸上写出 → 对照' : mode === 'qa' ? '看到术语 → 打字输出 → 对照答案 → 找关键词差距' : '逐题挑战 → 看术语 → 脑中回忆 → 翻卡对照 → 标记弱项'}<br/>
           ② 漏掉的关键词用红笔补上<br/>
           ③ 重复 3-5 遍，直到能完整输出<br/>
-          ④ 用"逐题挑战"模式攻克弱项池
+          ④ 用"逐题挑战"模式攻克弱项池，用"问答练习"模拟复试输出
         </div>
       </Card>
     </AppShell>
